@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function LegalAnsweringServicePricingGuide() {
   return (
@@ -36,7 +37,29 @@ export default function LegalAnsweringServicePricingGuide() {
               Understanding legal answering service pricing is crucial for law firms looking to maximize their ROI while providing excellent client service. This comprehensive guide breaks down pricing models, hidden costs, and how to choose the right plan for your firm's needs and budget.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Common Pricing Models for Legal Answering Services</h2>
+            {/* Hero Image */}
+            <div className="mb-12">
+              <Image
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Legal answering service pricing guide and cost analysis"
+                width={1200}
+                height={600}
+                className="rounded-xl shadow-lg"
+                priority
+              />
+            </div>
+
+            <h2 className="text-3xl font-bold mb-8 mt-16">Common Pricing Models for Legal Answering Services</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Different pricing models and cost structures for legal services"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Legal answering services use various pricing models, each with its own advantages and considerations. Understanding these models helps you choose the most cost-effective option for your firm.
@@ -96,7 +119,17 @@ export default function LegalAnsweringServicePricingGuide() {
               </div>
             </div>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Typical Pricing Ranges by Firm Size</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Typical Pricing Ranges by Firm Size</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Pricing ranges and cost breakdowns by law firm size"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <h3 className="text-2xl font-semibold mb-4">Solo Practitioners</h3>
             <p className="mb-6">
@@ -118,7 +151,17 @@ export default function LegalAnsweringServicePricingGuide() {
               Large firms need enterprise-level services with custom features. Expected monthly cost: $1,500-5,000+.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Hidden Costs to Watch For</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Hidden Costs to Watch For</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Hidden costs and additional fees to watch for in legal services"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               When comparing answering service pricing, be aware of these hidden costs that can significantly impact your total cost:
@@ -133,7 +176,17 @@ export default function LegalAnsweringServicePricingGuide() {
               <li><strong>Minimum Commitments:</strong> Minimum monthly charges even if you don't use the service</li>
             </ul>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">How to Calculate ROI</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">How to Calculate ROI</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="ROI calculation and financial analysis for legal answering services"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               To determine if an answering service is worth the cost, calculate your return on investment:

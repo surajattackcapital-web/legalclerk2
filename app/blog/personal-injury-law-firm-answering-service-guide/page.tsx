@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function PersonalInjuryLawFirmAnsweringServiceGuide() {
   return (
@@ -36,7 +37,29 @@ export default function PersonalInjuryLawFirmAnsweringServiceGuide() {
               Personal injury law firms face unique challenges when it comes to client intake. Accident victims often call immediately after an incident, and the first law firm to respond effectively has the best chance of securing the case. A specialized personal injury answering service can be the difference between capturing high-value cases and losing them to competitors.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Why Personal Injury Firms Need Specialized Answering Services</h2>
+            {/* Hero Image */}
+            <div className="mb-12">
+              <Image
+                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Personal injury law firm answering service for accident victims"
+                width={1200}
+                height={600}
+                className="rounded-xl shadow-lg"
+                priority
+              />
+            </div>
+
+            <h2 className="text-3xl font-bold mb-8 mt-16">Why Personal Injury Firms Need Specialized Answering Services</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Specialized answering services for personal injury law firms"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Personal injury cases are time-sensitive and highly competitive. Studies show that 80% of personal injury clients choose the first attorney they speak with, making immediate response critical. A specialized answering service understands the urgency and can capture cases that might otherwise be lost.
@@ -80,7 +103,17 @@ export default function PersonalInjuryLawFirmAnsweringServiceGuide() {
               High-value cases or cases with time-sensitive elements (like truck accidents or product liability) should be routed immediately to attorneys, even outside business hours.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Specialized Training for Personal Injury Receptionists</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Specialized Training for Personal Injury Receptionists</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Specialized training and education for personal injury receptionists"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="card">
@@ -124,7 +157,17 @@ export default function PersonalInjuryLawFirmAnsweringServiceGuide() {
               <li><strong>Premises Liability:</strong> Slip and fall cases with serious injuries</li>
             </ul>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">24/7 Availability for Personal Injury Firms</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">24/7 Availability for Personal Injury Firms</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="24/7 availability and emergency response for personal injury cases"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Personal injury accidents don't follow business hours. Many accidents occur during evenings, weekends, and holidays. A 24/7 answering service ensures that your firm never misses a potential case, regardless of when the accident occurs.
@@ -141,7 +184,17 @@ export default function PersonalInjuryLawFirmAnsweringServiceGuide() {
               </ul>
             </div>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Integration with Personal Injury Case Management</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Integration with Personal Injury Case Management</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Case management integration and workflow automation for personal injury"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Effective personal injury answering services should integrate seamlessly with your case management system:

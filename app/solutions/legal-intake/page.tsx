@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import GlobalCTA from '@/components/GlobalCTA'
 import Link from 'next/link'
 
 export default function LegalIntake() {
@@ -71,7 +72,7 @@ export default function LegalIntake() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="section-spacing">
+      <section className="section-spacing bg-gray-50">
         <div className="container-custom">
           <div className="hero-grid">
             <div className="space-y-6">
@@ -95,14 +96,12 @@ export default function LegalIntake() {
               </div>
             </div>
             <div>
-              <div className="bg-card-bg rounded-xl p-8 h-96 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-20 h-20 bg-secondary rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-3xl">📋</span>
-                  </div>
-                  <p className="text-primary/60">Intake Dashboard</p>
-                  <p className="small-text text-primary/40">Automated form builder</p>
-                </div>
+              <div className="w-full max-w-md h-96 rounded-xl overflow-hidden shadow-xl">
+                <img
+                  src="https://cdn.prod.website-files.com/67e305e6047ac35569c07df9/68e1e8fa638caa9b7c1674df_legal.png"
+                  alt="Legal Intake Automation Dashboard"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -136,23 +135,35 @@ export default function LegalIntake() {
       {/* Process Flow */}
       <section className="section-spacing">
         <div className="container-custom">
-          <div className="text-center mb-12">
+          <div className="text-center mb-16">
             <h2 className="mb-4">Streamlined Intake Process</h2>
             <p className="text-primary/80 max-w-2xl mx-auto">
-              From initial contact to case file creation, our automated process saves time and reduces errors.
+              From initial contact to case file creation - our automated process handles it all
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {process.map((item, index) => (
-              <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-secondary rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-primary">{item.step}</span>
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {process.map((item, index) => (
+                <div key={index} className="relative">
+                  <div className="card text-center h-full border border-border-light hover:shadow-lg transition-all duration-300">
+                    <div className="w-16 h-16 bg-gradient-to-br from-secondary to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                      <span className="text-xl font-bold text-white">{item.step}</span>
+                    </div>
+                    <h3 className="mb-3 text-lg font-bold text-gray-800">{item.title}</h3>
+                    <p className="text-gray-600 leading-relaxed small-text">{item.description}</p>
+                  </div>
+                  {/* Arrow for desktop - only show on first 5 items */}
+                  {index < 5 && (
+                    <div className="hidden lg:block absolute top-8 -right-3 w-6 h-6 bg-secondary rounded-full flex items-center justify-center z-10">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                  )}
                 </div>
-                <h3 className="mb-3">{item.title}</h3>
-                <p className="text-primary/80 small-text">{item.description}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -195,14 +206,12 @@ export default function LegalIntake() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-card-bg rounded-xl p-8 h-80 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-16 h-16 bg-secondary rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-2xl">📊</span>
-                  </div>
-                  <p className="text-primary/60">Intake Analytics</p>
-                  <p className="small-text text-primary/40">Track performance and optimize</p>
-                </div>
+              <div className="w-full h-80 rounded-xl overflow-hidden shadow-xl">
+                <img
+                  src="https://cdn.prod.website-files.com/67e305e6047ac35569c07df9/68e1eb8f3988fb988b4ea002_legal1.png"
+                  alt="Benefits of Automated Intake - Legal Intake Dashboard"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -249,22 +258,12 @@ export default function LegalIntake() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-spacing bg-secondary">
-        <div className="container-custom text-center">
-          <h2 className="text-primary mb-4">Ready to Automate Your Intake?</h2>
-          <p className="text-primary/90 mb-8 max-w-2xl mx-auto">
-            Transform your client intake process and never miss another opportunity.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="btn-secondary bg-primary text-secondary hover:bg-primary/90">
-              Start Free Trial
-            </Link>
-            <Link href="/contact" className="btn-primary bg-primary/20 text-primary hover:bg-primary/30">
-              Schedule Demo
-            </Link>
-          </div>
-        </div>
-      </section>
+      <GlobalCTA 
+        title="Ready to Automate Your Intake?"
+        subtitle="Transform your client intake process and never miss another opportunity."
+        buttonText="Start Free Trial"
+        buttonLink="/contact"
+      />
     </Layout>
   )
 }

@@ -1,6 +1,7 @@
 'use client'
 
 import Layout from '@/components/Layout'
+import GlobalCTA from '@/components/GlobalCTA'
 import Link from 'next/link'
 import { useState } from 'react'
 
@@ -175,7 +176,7 @@ export default function Blog() {
           {/* Header */}
           <div className="text-center mb-12">
             <h1 className="mb-4">Legal Technology Blog</h1>
-            <p className="text-xl text-primary/80 max-w-3xl mx-auto">
+            <p className="text-xl text-text-secondary max-w-3xl mx-auto">
               Stay updated with the latest insights on legal technology, client intake automation, 
               and best practices for law firm growth.
             </p>
@@ -189,8 +190,8 @@ export default function Blog() {
                 onClick={() => handleCategoryClick('All')}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
                   selectedCategory === null 
-                    ? 'bg-secondary text-white' 
-                    : 'bg-secondary/10 hover:bg-secondary/20 text-secondary'
+                    ? 'bg-primary text-secondary' 
+                    : 'bg-primary/10 hover:bg-primary/20 text-primary'
                 }`}
               >
                 All
@@ -201,8 +202,8 @@ export default function Blog() {
                   onClick={() => handleCategoryClick(category)}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
                     selectedCategory === category 
-                      ? 'bg-secondary text-white' 
-                      : 'bg-secondary/10 hover:bg-secondary/20 text-secondary'
+                      ? 'bg-primary text-secondary' 
+                      : 'bg-primary/10 hover:bg-primary/20 text-primary'
                   }`}
                 >
                   {category}
@@ -221,17 +222,17 @@ export default function Blog() {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="mb-4">
-                  <span className="inline-block bg-secondary/20 text-secondary px-3 py-1 rounded-full text-sm font-medium">
+                  <span className="inline-block bg-primary/20 text-primary px-3 py-1 rounded-full text-sm font-medium">
                     {post.category}
                   </span>
                 </div>
-                <h2 className="text-xl font-semibold mb-3 line-clamp-2 group-hover:text-secondary transition-colors">
+                <h2 className="text-xl font-semibold mb-3 line-clamp-2 group-hover:text-primary transition-colors">
                   {post.title}
                 </h2>
-                <p className="text-primary/80 mb-4 line-clamp-3">
+                <p className="text-text-secondary mb-4 line-clamp-3">
                   {post.excerpt}
                 </p>
-                <div className="flex items-center justify-between text-sm text-primary/60">
+                <div className="flex items-center justify-between text-sm text-text-secondary/60">
                   <span>{post.date}</span>
                   <span>{post.readTime}</span>
                 </div>
@@ -256,7 +257,7 @@ export default function Blog() {
             <div className="text-center mt-12">
               <div className="card max-w-md mx-auto">
                 <h3 className="text-xl font-semibold mb-4">No articles found</h3>
-                <p className="text-primary/80 mb-4">
+                <p className="text-text-secondary mb-4">
                   No articles found in the "{selectedCategory}" category.
                 </p>
                 <button
@@ -271,16 +272,16 @@ export default function Blog() {
 
           {/* Newsletter Signup */}
           <div className="mt-16 text-center">
-            <div className="card max-w-2xl mx-auto">
+            <div className="card max-w-2xl mx-auto border border-border-light">
               <h3 className="text-2xl font-semibold mb-4">Stay Updated</h3>
-              <p className="text-primary/80 mb-6">
+              <p className="text-text-secondary mb-6">
                 Get the latest insights on legal technology and law firm growth strategies delivered to your inbox.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
                 <input 
                   type="email" 
                   placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 rounded-lg border border-primary/20 focus:outline-none focus:ring-2 focus:ring-secondary"
+                  className="flex-1 px-4 py-3 rounded-lg border border-border-light focus:outline-none focus:ring-2 focus:ring-primary"
                 />
                 <button className="btn-primary px-6 py-3">
                   Subscribe
@@ -290,6 +291,14 @@ export default function Blog() {
           </div>
         </div>
       </div>
+
+      {/* CTA Section */}
+      <GlobalCTA 
+        title="Ready to Transform Your Law Firm?"
+        subtitle="Join hundreds of law firms already using LegalClerk.ai to never miss another client call."
+        buttonText="Start Free Trial"
+        buttonLink="/contact"
+      />
     </Layout>
   )
 }

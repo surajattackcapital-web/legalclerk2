@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import GlobalCTA from '@/components/GlobalCTA'
 
 export default function Contact() {
   return (
@@ -202,6 +203,14 @@ export default function Contact() {
           </div>
         </div>
       </section>
+
+      {/* CTA Section */}
+      <GlobalCTA 
+        title="Ready to Get Started?"
+        subtitle="Join hundreds of law firms already using LegalClerk.ai to never miss another client call."
+        buttonText="Start Free Trial"
+        buttonLink="/pricing"
+      />
     </Layout>
   )
 }

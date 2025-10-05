@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import GlobalCTA from '@/components/GlobalCTA'
 
 export default function About() {
   return (
@@ -140,22 +141,12 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-spacing">
-        <div className="container-custom text-center">
-          <h2 className="mb-4">Ready to Work With Us?</h2>
-          <p className="text-primary/80 mb-8 max-w-2xl mx-auto">
-            Let's discuss how LegalClerk.ai can transform your firm's client communication.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/contact" className="btn-primary btn-mobile">
-              Schedule a Demo
-            </a>
-            <a href="/pricing" className="btn-secondary btn-mobile">
-              View Pricing
-            </a>
-          </div>
-        </div>
-      </section>
+      <GlobalCTA 
+        title="Ready to Work With Us?"
+        subtitle="Let's discuss how LegalClerk.ai can transform your firm's client communication."
+        buttonText="Schedule a Demo"
+        buttonLink="/contact"
+      />
     </Layout>
   )
 }

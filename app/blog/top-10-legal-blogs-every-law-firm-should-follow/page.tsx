@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function TopLegalBlogs() {
   return (
@@ -44,7 +45,29 @@ export default function TopLegalBlogs() {
               thriving, profitable practice.
             </p>
 
-            <h2>1. The National Law Journal</h2>
+            {/* Hero Image */}
+            <div className="mb-12">
+              <Image
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Top legal blogs and resources for law firms"
+                width={1200}
+                height={600}
+                className="rounded-xl shadow-lg"
+                priority
+              />
+            </div>
+
+            <h2 className="mt-16 mb-8">1. The National Law Journal</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="National Law Journal and legal industry news"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             <p>
               Looking for a way to stay up to date with legal issues the law industry is facing? Want more insights into today's hottest law topics? 
               The National Law Review blog is a great place to turn. It covers just about all areas within the legal industry, too, from family law 
@@ -76,7 +99,17 @@ export default function TopLegalBlogs() {
               legal research tools to blockchain applications in law, this blog keeps you ahead of the technological curve that's transforming the legal profession.
             </p>
 
-            <h2>4. The Legal IT Insider</h2>
+            <h2 className="mt-16 mb-8">4. The Legal IT Insider</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Legal IT Insider and technology law resources"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             <p>
               The worlds of technology and law meet in some interesting ways. The realm of IT law is one example. It's a unique blend of the two fields 
               and can be incredibly tricky to navigate. The Legal IT Insider blog can help.
@@ -86,7 +119,17 @@ export default function TopLegalBlogs() {
               particularly valuable for law firms dealing with cybersecurity, data privacy, and technology-related legal issues.
             </p>
 
-            <h2>5. Law Technology Today</h2>
+            <h2 className="mt-16 mb-8">5. Law Technology Today</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Law Technology Today and ABA technology resources"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             <p>
               Here's another important legal blog for those dealing with technology-related cases. Law Technology Today is part of the American Bar Association, 
               and you'll find that it covers topics that bear directly on the things you experience every day like cybersecurity, cryptocurrency, and AI to name just a few.
@@ -96,7 +139,17 @@ export default function TopLegalBlogs() {
               the legal industry. It's an authoritative source for understanding how technology is reshaping legal practice.
             </p>
 
-            <h2>6. ABA Journal</h2>
+            <h2 className="mt-16 mb-8">6. ABA Journal</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="ABA Journal and American Bar Association resources"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             <p>
               Don't have time to go to individual blogs but still want the best information to inform your practice? The ABA Journal is the option for you. 
               It aggregates posts from over 4,000 of the best legal blogs out there in one place, so you can save time without sacrificing access to the 
@@ -129,7 +182,17 @@ export default function TopLegalBlogs() {
               and innovators across industries.
             </p>
 
-            <h2>9. Health Law Advisor</h2>
+            <h2 className="mt-16 mb-8">9. Health Law Advisor</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Health Law Advisor and healthcare legal resources"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             <p>
               The healthcare and life sciences industries are incredibly intricate and governed by unique rules and regulations. It's important that attorneys 
               focusing on health law have access to guidance and information, and Health Law Advisor does just that.
@@ -139,7 +202,17 @@ export default function TopLegalBlogs() {
               It specifically focuses on healthcare, life sciences, healthcare labor laws, and technology within the healthcare industry.
             </p>
 
-            <h2>10. SCOTUSblog</h2>
+            <h2 className="mt-16 mb-8">10. SCOTUSblog</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="SCOTUSblog and Supreme Court legal resources"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             <p>
               It's no secret that the US Supreme Court (SCOTUS) is responsible for some of today's landmark legal decisions. The SCOTUSblog focuses on petitions 
               coming before the court that deserve special attention. Readers also value the site's morning read feature, which includes a list of important 

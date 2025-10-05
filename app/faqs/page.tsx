@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import GlobalCTA from '@/components/GlobalCTA'
 
 export default function FAQs() {
   const faqs = [
@@ -67,50 +68,72 @@ export default function FAQs() {
   return (
     <Layout>
       <div className="section-spacing">
-        <div className="container-custom max-w-4xl">
+        <div className="container-custom max-w-5xl">
           {/* Header */}
-          <div className="text-center mb-12">
-            <h1 className="mb-4">Frequently Asked Questions About Legal Answering Services</h1>
-            <p className="text-xl text-primary/80 max-w-3xl mx-auto">
+          <div className="text-center mb-20">
+            <h1 className="mb-6 text-4xl font-bold text-gray-800">Frequently Asked Questions</h1>
+            <p className="text-xl text-primary/80 max-w-3xl mx-auto leading-relaxed">
               Get answers to the most common questions about legal answering services, 
               virtual receptionists for law firms, and how LegalClerk.ai can help your practice.
             </p>
           </div>
 
           {/* FAQ Items */}
-          <div className="space-y-6">
+          <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <div key={index} className="card animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                <h3 className="text-xl font-semibold mb-4 text-secondary">
-                  {faq.question}
-                </h3>
-                <p className="text-primary/80 leading-relaxed">
-                  {faq.answer}
-                </p>
+              <div key={index} className="group">
+                <div className="bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 animate-scale-in" style={{ animationDelay: `${index * 0.05}s` }}>
+                  <div className="p-6">
+                    <div className="flex items-start justify-between mb-4">
+                      <h3 className="text-lg font-semibold text-gray-800 pr-4 flex-1 no-underline">
+                        {faq.question}
+                      </h3>
+                      <div className="w-5 h-5 bg-primary rounded-sm flex items-center justify-center flex-shrink-0">
+                        <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div className="w-full h-px bg-primary mb-4"></div>
+                    <p className="text-gray-600 leading-relaxed text-sm">
+                      {faq.answer}
+                    </p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
 
           {/* Contact CTA */}
-          <div className="mt-16 text-center">
-            <div className="card max-w-2xl mx-auto">
-              <h3 className="text-2xl font-semibold mb-4">Still Have Questions?</h3>
-              <p className="text-primary/80 mb-6">
-                Our legal answering service experts are here to help. Contact us for a free consultation 
-                and learn how we can help your law firm never miss another client call.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/contact" className="btn-primary">
-                  Contact Us
-                </a>
-                <a href="/pricing" className="btn-secondary">
-                  View Pricing
-                </a>
+          <div className="mt-20 text-center">
+            <div className="card max-w-3xl mx-auto border border-gray-200 hover:border-primary/30 hover:shadow-lg transition-all duration-300 bg-white">
+              <div className="p-10">
+                <h3 className="text-3xl font-bold mb-6 text-gray-800">Still Have Questions?</h3>
+                <p className="text-primary/80 mb-8 text-lg leading-relaxed">
+                  Our legal answering service experts are here to help. Contact us for a free consultation 
+                  and learn how we can help your law firm never miss another client call.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                  <a href="/contact" className="btn-primary btn-mobile">
+                    Contact Us
+                  </a>
+                  <a href="/pricing" className="btn-secondary btn-mobile">
+                    View Pricing
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* CTA Section */}
+      <GlobalCTA 
+        title="Ready to Get Started?"
+        subtitle="Join hundreds of law firms already using LegalClerk.ai to never miss another client call."
+        buttonText="Start Free Trial"
+        buttonLink="/contact"
+      />
     </Layout>
   )
 }

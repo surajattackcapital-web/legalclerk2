@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import GlobalCTA from '@/components/GlobalCTA'
 import Link from 'next/link'
 
 export default function Integrations() {
@@ -267,22 +268,12 @@ export default function Integrations() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-spacing bg-secondary">
-        <div className="container-custom text-center">
-          <h2 className="text-primary mb-4">Ready to Connect Your Systems?</h2>
-          <p className="text-primary/90 mb-8 max-w-2xl mx-auto">
-            Streamline your legal practice with seamless integrations that work with your existing tools.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="btn-secondary bg-primary text-secondary hover:bg-primary/90">
-              Start Integration Setup
-            </Link>
-            <Link href="/contact" className="btn-primary bg-primary/20 text-primary hover:bg-primary/30">
-              Schedule Demo
-            </Link>
-          </div>
-        </div>
-      </section>
+      <GlobalCTA 
+        title="Ready to Connect Your Systems?"
+        subtitle="Streamline your legal practice with seamless integrations that work with your existing tools."
+        buttonText="Start Integration Setup"
+        buttonLink="/contact"
+      />
     </Layout>
   )
 }

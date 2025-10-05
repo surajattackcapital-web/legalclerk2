@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function HIPAAComplianceLegalAnsweringServices() {
   return (
@@ -36,7 +37,29 @@ export default function HIPAAComplianceLegalAnsweringServices() {
               HIPAA compliance is crucial for legal answering services, especially when handling sensitive client information related to personal injury, medical malpractice, or other health-related legal matters. Understanding HIPAA requirements and ensuring your answering service meets these standards is essential for protecting your clients and your practice.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">What is HIPAA and Why Does It Matter for Law Firms?</h2>
+            {/* Hero Image */}
+            <div className="mb-12">
+              <Image
+                src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="HIPAA compliance and data security for legal answering services"
+                width={1200}
+                height={600}
+                className="rounded-xl shadow-lg"
+                priority
+              />
+            </div>
+
+            <h2 className="text-3xl font-bold mb-8 mt-16">What is HIPAA and Why Does It Matter for Law Firms?</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="HIPAA regulations and legal compliance requirements"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               The Health Insurance Portability and Accountability Act (HIPAA) is a federal law that establishes national standards for protecting sensitive patient health information. While HIPAA primarily applies to healthcare providers, it also affects law firms that handle Protected Health Information (PHI) in certain circumstances.
@@ -68,7 +91,17 @@ export default function HIPAAComplianceLegalAnsweringServices() {
               Social Security disability cases require extensive medical documentation and health information. All communications about these cases must comply with HIPAA requirements.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Key HIPAA Requirements for Legal Answering Services</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Key HIPAA Requirements for Legal Answering Services</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Key HIPAA requirements and compliance standards for legal services"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="card">
@@ -124,7 +157,17 @@ export default function HIPAAComplianceLegalAnsweringServices() {
               All staff members who handle PHI must receive regular HIPAA training and understand their responsibilities for protecting client information.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Business Associate Agreements (BAAs)</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Business Associate Agreements (BAAs)</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Business Associate Agreements and legal compliance documentation"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               A Business Associate Agreement (BAA) is a written contract between a covered entity (or business associate) and a service provider that handles PHI. For legal answering services, a BAA is essential when:
@@ -175,7 +218,17 @@ export default function HIPAAComplianceLegalAnsweringServices() {
               <strong>Solution:</strong> Ensure all service providers that handle PHI have signed BAAs.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">How to Choose a HIPAA-Compliant Legal Answering Service</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">How to Choose a HIPAA-Compliant Legal Answering Service</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="How to choose and evaluate HIPAA-compliant legal answering services"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
 
             <h3 className="text-2xl font-semibold mb-4">1. Verify HIPAA Compliance</h3>
             <p className="mb-6">

@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function FamilyLawAnsweringServiceSolutions() {
   return (
@@ -36,7 +37,29 @@ export default function FamilyLawAnsweringServiceSolutions() {
               Family law cases involve some of the most sensitive and emotional situations in legal practice. Divorce, custody battles, domestic violence, and adoption cases require specialized handling by answering service professionals who understand the unique needs of family law clients. A well-trained family law answering service can provide compassionate support while capturing valuable cases.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Unique Challenges in Family Law Client Intake</h2>
+            {/* Hero Image */}
+            <div className="mb-12">
+              <Image
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Family law answering service handling sensitive cases with care"
+                width={1200}
+                height={600}
+                className="rounded-xl shadow-lg"
+                priority
+              />
+            </div>
+
+            <h2 className="text-3xl font-bold mb-8 mt-16">Unique Challenges in Family Law Client Intake</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Emotional challenges and sensitive situations in family law"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Family law cases present unique challenges that require specialized answering service solutions. Clients are often dealing with highly emotional situations, and the first contact with your firm can significantly impact their decision to retain your services.
@@ -80,7 +103,17 @@ export default function FamilyLawAnsweringServiceSolutions() {
               Paternity cases can be complex and emotionally charged. Receptionists must gather information about the child, alleged father, and the circumstances surrounding the case.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Essential Features for Family Law Answering Services</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Essential Features for Family Law Answering Services</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Essential features and capabilities for family law answering services"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="card">
@@ -158,7 +191,17 @@ export default function FamilyLawAnsweringServiceSolutions() {
               </div>
             </div>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Crisis Intervention and Safety Protocols</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Crisis Intervention and Safety Protocols</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Crisis intervention and safety protocols for family law cases"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Family law cases often involve crisis situations that require immediate response:
@@ -172,7 +215,17 @@ export default function FamilyLawAnsweringServiceSolutions() {
               <li><strong>Mental Health:</strong> Clients in mental health crisis requiring appropriate referrals</li>
             </ul>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">24/7 Availability for Family Law</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">24/7 Availability for Family Law</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="24/7 availability and emergency response for family law cases"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Family law emergencies don't follow business hours. Many clients call during evenings and weekends when they have privacy:

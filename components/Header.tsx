@@ -143,15 +143,15 @@ export default function Header() {
   }
 
   return (
-    <header ref={headerRef} className="sticky top-0 z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
+    <header ref={headerRef} className="sticky top-0 z-50 bg-secondary/95 backdrop-blur-md border-b border-border-light transition-all duration-300">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
         <div className="flex items-center justify-between h-18">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group focus:outline-none">
-            <div className="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-200">
-              <span className="text-white font-bold text-lg">L</span>
+            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-200">
+              <span className="text-secondary font-bold text-lg">L</span>
             </div>
-            <span className="text-xl font-semibold text-white group-hover:text-orange-500 transition-colors duration-200" style={{ fontFamily: 'Rethink Sans, system-ui, sans-serif' }}>LegalClerk.ai</span>
+            <span className="text-xl font-semibold text-text-primary group-hover:text-primary transition-colors duration-200" style={{ fontFamily: 'Rethink Sans, system-ui, sans-serif' }}>LegalClerk.ai</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -165,10 +165,10 @@ export default function Header() {
               >
                 <Link
                   href={item.href}
-                  className={`text-gray-300 hover:text-orange-500 transition-colors duration-200 py-2 px-3 rounded-md text-sm font-medium flex items-center space-x-1 focus:outline-none ${
-                    activeDropdown === (item.name?.toLowerCase() || '') ? 'text-orange-500' : ''
+                  className={`text-text-secondary hover:text-primary transition-colors duration-200 py-2 px-3 rounded-md text-sm font-medium flex items-center space-x-1 focus:outline-none ${
+                    activeDropdown === (item.name?.toLowerCase() || '') ? 'text-primary' : ''
                   }`}
-                  style={{ fontFamily: 'Poppins, system-ui, sans-serif' }}
+                  style={{ fontFamily: 'Rethink Sans, system-ui, sans-serif' }}
                 >
                   <span className="flex items-center space-x-2">
                     {item.icon}
@@ -184,7 +184,7 @@ export default function Header() {
                 {/* Dropdown Menu */}
                 {item.hasDropdown && activeDropdown === (item.name?.toLowerCase() || '') && (
                   <div 
-                    className="absolute top-full left-0 mt-2 w-64 bg-gray-900/95 backdrop-blur-md border border-gray-700 rounded-lg shadow-xl z-40"
+                    className="absolute top-full left-0 mt-2 w-64 bg-secondary/95 backdrop-blur-md border border-border-light rounded-lg shadow-xl z-40"
                     onMouseEnter={handleDropdownMouseEnter}
                     onMouseLeave={handleDropdownMouseLeave}
                   >
@@ -193,7 +193,7 @@ export default function Header() {
                         <Link
                           key={index}
                           href={subItem.href}
-                          className="block px-4 py-3 text-gray-300 hover:text-orange-500 hover:bg-gray-800 transition-colors duration-200 text-sm focus:outline-none"
+                          className="block px-4 py-3 text-text-secondary hover:text-primary hover:bg-gray-50 transition-colors duration-200 text-sm focus:outline-none"
                         >
                           {subItem.name}
                         </Link>
@@ -209,8 +209,8 @@ export default function Header() {
           <div className="hidden lg:flex items-center space-x-4">
             <Link 
               href="/contact" 
-              className="bg-orange-500 text-white px-8 py-3 rounded-lg text-base font-medium hover:bg-orange-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 text-center"
-              style={{ fontFamily: 'Poppins, system-ui, sans-serif' }}
+              className="btn-primary px-8 py-3 text-base font-medium focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 text-center"
+              style={{ fontFamily: 'Rethink Sans, system-ui, sans-serif' }}
             >
               Book Demo
             </Link>
@@ -218,16 +218,16 @@ export default function Header() {
 
           {/* Mobile menu button */}
           <button
-            className="lg:hidden p-2 rounded-md hover:bg-gray-800 transition-colors duration-200"
+            className="lg:hidden p-2 rounded-md hover:bg-gray-100 transition-colors duration-200"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
           >
             <div className="w-6 h-6 flex flex-col justify-center space-y-1">
-              <span className={`block h-0.5 w-6 bg-white transition-all duration-200 ${isMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
-              <span className={`block h-0.5 w-6 bg-white transition-all duration-200 ${isMenuOpen ? 'opacity-0' : ''}`}></span>
-              <span className={`block h-0.5 w-6 bg-white transition-all duration-200 ${isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
+              <span className={`block h-0.5 w-6 bg-primary transition-all duration-200 ${isMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
+              <span className={`block h-0.5 w-6 bg-primary transition-all duration-200 ${isMenuOpen ? 'opacity-0' : ''}`}></span>
+              <span className={`block h-0.5 w-6 bg-primary transition-all duration-200 ${isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
             </div>
           </button>
         </div>
@@ -236,7 +236,7 @@ export default function Header() {
         {isMenuOpen && (
           <div 
             id="mobile-menu"
-            className="lg:hidden py-4 border-t border-gray-800 bg-black/95 backdrop-blur-md"
+            className="lg:hidden py-4 border-t border-border-light bg-secondary/95 backdrop-blur-md"
             role="navigation"
             aria-label="Mobile navigation"
           >
@@ -245,8 +245,8 @@ export default function Header() {
                 <div key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-gray-300 hover:text-orange-500 transition-colors duration-200 py-3 px-4 rounded-md hover:bg-gray-800 text-sm font-medium flex items-center justify-between focus:outline-none"
-                  style={{ fontFamily: 'Poppins, system-ui, sans-serif', animationDelay: `${index * 0.05}s` }}
+                    className="text-text-secondary hover:text-primary transition-colors duration-200 py-3 px-4 rounded-md hover:bg-gray-50 text-sm font-medium flex items-center justify-between focus:outline-none"
+                  style={{ fontFamily: 'Rethink Sans, system-ui, sans-serif', animationDelay: `${index * 0.05}s` }}
                     onClick={() => setIsMenuOpen(false)}
                     tabIndex={isMenuOpen ? 0 : -1}
                   >
@@ -268,7 +268,7 @@ export default function Header() {
                         <Link
                           key={subIndex}
                           href={subItem.href}
-                          className="block text-gray-400 hover:text-orange-500 transition-colors duration-200 py-2 px-4 rounded-md hover:bg-gray-800 text-sm focus:outline-none"
+                          className="block text-text-secondary/70 hover:text-primary transition-colors duration-200 py-2 px-4 rounded-md hover:bg-gray-50 text-sm focus:outline-none"
                           onClick={() => setIsMenuOpen(false)}
                           tabIndex={isMenuOpen ? 0 : -1}
                         >
@@ -279,11 +279,11 @@ export default function Header() {
                   )}
                 </div>
               ))}
-              <div className="pt-4 border-t border-gray-800">
+              <div className="pt-4 border-t border-border-light">
                 <Link
                   href="/contact"
-                  className="bg-orange-500 text-white px-8 py-4 rounded-lg text-base font-medium hover:bg-orange-600 transition-colors duration-200 block text-center focus:outline-none"
-                  style={{ fontFamily: 'Poppins, system-ui, sans-serif' }}
+                  className="btn-primary px-8 py-4 text-base font-medium block text-center focus:outline-none"
+                  style={{ fontFamily: 'Rethink Sans, system-ui, sans-serif' }}
                   onClick={() => setIsMenuOpen(false)}
                   tabIndex={isMenuOpen ? 0 : -1}
                 >

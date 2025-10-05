@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function CriminalDefenseLawFirmAnsweringServiceBestPractices() {
   return (
@@ -36,7 +37,29 @@ export default function CriminalDefenseLawFirmAnsweringServiceBestPractices() {
               Criminal defense law firms face unique challenges when it comes to client intake. Clients facing criminal charges often call in crisis situations, and the first law firm to respond professionally and empathetically has the best chance of securing the case. A specialized criminal defense answering service can be the difference between capturing cases and losing them to competitors.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Why Criminal Defense Firms Need Specialized Answering Services</h2>
+            {/* Hero Image */}
+            <div className="mb-12">
+              <Image
+                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Criminal defense law firm answering service for crisis situations"
+                width={1200}
+                height={600}
+                className="rounded-xl shadow-lg"
+                priority
+              />
+            </div>
+
+            <h2 className="text-3xl font-bold mb-8 mt-16">Why Criminal Defense Firms Need Specialized Answering Services</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Specialized criminal defense answering service requirements"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Criminal defense cases are time-sensitive and often involve clients in crisis. Studies show that 75% of criminal defense clients choose the first attorney they speak with, making immediate response critical. A specialized answering service understands the urgency and can capture cases that might otherwise be lost.
@@ -82,7 +105,17 @@ export default function CriminalDefenseLawFirmAnsweringServiceBestPractices() {
               </div>
             </div>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Types of Criminal Cases and Specialized Handling</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Types of Criminal Cases and Specialized Handling</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Different types of criminal cases and specialized handling requirements"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <h3 className="text-2xl font-semibold mb-4">1. Misdemeanor Cases</h3>
             <p className="mb-6">
@@ -118,7 +151,17 @@ export default function CriminalDefenseLawFirmAnsweringServiceBestPractices() {
               <li><strong>Probation Violations:</strong> Issues with probation or parole</li>
             </ul>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Information Collection for Criminal Cases</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Information Collection for Criminal Cases</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Information collection and intake process for criminal defense cases"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Criminal defense receptionists must collect specific information relevant to criminal cases:
@@ -167,7 +210,17 @@ export default function CriminalDefenseLawFirmAnsweringServiceBestPractices() {
               </div>
             </div>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Confidentiality and Attorney-Client Privilege</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Confidentiality and Attorney-Client Privilege</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Confidentiality and attorney-client privilege protection"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Criminal defense cases require the highest level of confidentiality. Receptionists must understand and maintain attorney-client privilege from the first contact:
@@ -181,7 +234,17 @@ export default function CriminalDefenseLawFirmAnsweringServiceBestPractices() {
               <li><strong>Media Inquiries:</strong> No information should be provided to media without attorney approval</li>
             </ul>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">24/7 Availability for Criminal Defense</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">24/7 Availability for Criminal Defense</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="24/7 availability and emergency response for criminal defense"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Criminal cases don't follow business hours. Arrests, court dates, and emergencies can happen at any time:

@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function LegalAnsweringServiceMistakesToAvoid() {
   return (
@@ -36,7 +37,29 @@ export default function LegalAnsweringServiceMistakesToAvoid() {
               Many law firms make costly mistakes when implementing legal answering services, leading to lost clients, poor service quality, and wasted money. This guide identifies the most common mistakes and provides actionable strategies to avoid them, ensuring your answering service investment delivers maximum ROI.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Mistake #1: Choosing Price Over Quality</h2>
+            {/* Hero Image */}
+            <div className="mb-12">
+              <Image
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Common mistakes to avoid when choosing legal answering services"
+                width={1200}
+                height={600}
+                className="rounded-xl shadow-lg"
+                priority
+              />
+            </div>
+
+            <h2 className="text-3xl font-bold mb-8 mt-16">Mistake #1: Choosing Price Over Quality</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Price vs quality comparison for legal answering services"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               One of the most common mistakes is selecting an answering service based solely on price. While cost is important, choosing the cheapest option often results in poor service quality, missed calls, and lost clients.
@@ -86,7 +109,17 @@ export default function LegalAnsweringServiceMistakesToAvoid() {
               <li>Document all procedures and protocols</li>
             </ul>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Mistake #3: Poor Script Development</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Mistake #3: Poor Script Development</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Script development and communication training for legal services"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Generic or poorly written scripts can damage your firm's professional image and reduce client conversion rates. Effective scripts are essential for consistent, professional communication.
@@ -134,7 +167,17 @@ export default function LegalAnsweringServiceMistakesToAvoid() {
               <li>Monitor and maintain integration performance</li>
             </ul>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Mistake #5: Inadequate Monitoring and Quality Control</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Mistake #5: Inadequate Monitoring and Quality Control</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Quality control and monitoring systems for legal answering services"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Many law firms set up answering services and then fail to monitor performance, leading to declining service quality and lost opportunities over time.
@@ -158,7 +201,17 @@ export default function LegalAnsweringServiceMistakesToAvoid() {
               <li>Provide ongoing supervision and coaching</li>
             </ul>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Mistake #6: Poor Communication and Expectations</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Mistake #6: Poor Communication and Expectations</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Communication and expectation management for legal services"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Many law firms fail to clearly communicate their expectations to their answering service provider, leading to misunderstandings and poor performance.
@@ -182,7 +235,17 @@ export default function LegalAnsweringServiceMistakesToAvoid() {
               <li>Maintain open lines of communication</li>
             </ul>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Mistake #7: Ignoring Compliance and Security</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Mistake #7: Ignoring Compliance and Security</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Compliance and security requirements for legal answering services"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Many law firms overlook compliance and security requirements when choosing answering services, potentially exposing themselves to legal and regulatory risks.

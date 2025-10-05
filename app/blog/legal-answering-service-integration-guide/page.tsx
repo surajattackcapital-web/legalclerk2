@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function LegalAnsweringServiceIntegrationGuide() {
   return (
@@ -36,7 +37,29 @@ export default function LegalAnsweringServiceIntegrationGuide() {
               Integrating your legal answering service with existing law firm systems is crucial for maximizing efficiency and ensuring seamless client experience. This comprehensive guide covers everything you need to know about integrating answering services with case management software, CRM systems, and other essential law firm tools.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Why Integration Matters for Legal Answering Services</h2>
+            {/* Hero Image */}
+            <div className="mb-12">
+              <Image
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Legal answering service integration with law firm systems"
+                width={1200}
+                height={600}
+                className="rounded-xl shadow-lg"
+                priority
+              />
+            </div>
+
+            <h2 className="text-3xl font-bold mb-8 mt-16">Why Integration Matters for Legal Answering Services</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="System integration benefits and efficiency improvements"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Proper integration between your answering service and law firm systems eliminates data silos, reduces manual work, and ensures that client information flows seamlessly from initial contact to case resolution. This improves efficiency, reduces errors, and enhances client satisfaction.
@@ -81,7 +104,17 @@ export default function LegalAnsweringServiceIntegrationGuide() {
               Billing integration allows automatic creation of invoices, time tracking, and expense management for answering service activities.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Popular Case Management System Integrations</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Popular Case Management System Integrations</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Popular case management system integrations and compatibility"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="card">
@@ -124,7 +157,17 @@ export default function LegalAnsweringServiceIntegrationGuide() {
               <li><strong>Custom CRM Integration:</strong> Integration with proprietary or custom-built CRM systems</li>
             </ul>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Calendar and Scheduling Integrations</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Calendar and Scheduling Integrations</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Calendar and scheduling integration systems for law firms"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Calendar integration ensures seamless appointment scheduling and management:
@@ -157,7 +200,17 @@ export default function LegalAnsweringServiceIntegrationGuide() {
               </div>
             </div>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Document Management Integrations</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Document Management Integrations</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Document management and file storage integration systems"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Document management integration ensures that all client documents are properly stored and organized:
@@ -171,7 +224,17 @@ export default function LegalAnsweringServiceIntegrationGuide() {
               <li><strong>NetDocuments Integration:</strong> Legal-specific document management system</li>
             </ul>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Billing and Accounting Integrations</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Billing and Accounting Integrations</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Billing and accounting integration systems for law firms"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Billing integration ensures accurate time tracking and invoicing:

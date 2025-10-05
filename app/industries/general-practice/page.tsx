@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import GlobalCTA from '@/components/GlobalCTA'
 import Link from 'next/link'
 
 export default function GeneralPractice() {
@@ -104,14 +105,12 @@ export default function GeneralPractice() {
               </div>
             </div>
             <div>
-              <div className="bg-card-bg rounded-xl p-8 h-96 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-20 h-20 bg-secondary rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-3xl">🏛️</span>
-                  </div>
-                  <p className="text-primary/60">General Practice Dashboard</p>
-                  <p className="small-text text-primary/40">Multi-practice management</p>
-                </div>
+              <div className="w-full max-w-md h-96 rounded-xl overflow-hidden shadow-xl">
+                <img
+                  src="https://cdn.prod.website-files.com/67e305e6047ac35569c07df9/68e1ef5d0896c0c10cfd99d9_legal4.png"
+                  alt="General Practice Dashboard - Multi-practice management"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -145,23 +144,27 @@ export default function GeneralPractice() {
       {/* Features Section */}
       <section className="section-spacing">
         <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="mb-4">General Practice Features</h2>
-            <p className="text-primary/80 max-w-2xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="mb-4 text-3xl font-bold text-gray-800">GENERAL PRACTICE FEATURES</h2>
+            <p className="text-primary/80 max-w-2xl mx-auto text-lg">
               Comprehensive features designed for the diverse needs of general practice law firms.
             </p>
           </div>
           
-          <div className="grid-responsive">
-            {features.map((feature, index) => (
-              <div key={index} className="card">
-                <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-xl">{feature.icon}</span>
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {features.map((feature, index) => (
+                <div key={index} className="group">
+                  <div className="card text-center h-full border border-gray-200 hover:border-primary/30 hover:shadow-xl transition-all duration-300 bg-white">
+                    <div className="w-16 h-16 bg-gradient-to-br from-secondary to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-2xl">{feature.icon}</span>
+                    </div>
+                    <h3 className="mb-4 text-xl font-bold text-gray-800 group-hover:text-primary transition-colors duration-300">{feature.title}</h3>
+                    <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                  </div>
                 </div>
-                <h3 className="mb-3">{feature.title}</h3>
-                <p className="text-primary/80 small-text">{feature.description}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -196,14 +199,12 @@ export default function GeneralPractice() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-card-bg rounded-xl p-8 h-80 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-16 h-16 bg-secondary rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-2xl">⚙️</span>
-                  </div>
-                  <p className="text-primary/60">Flexible Configuration</p>
-                  <p className="small-text text-primary/40">Adapt to your practice needs</p>
-                </div>
+              <div className="w-full h-80 rounded-xl overflow-hidden shadow-xl">
+                <img
+                  src="https://cdn.prod.website-files.com/67e305e6047ac35569c07df9/689c6ee0a1d0876274fc31e4_sheduling.webp"
+                  alt="Flexible Configuration - Adapt to your practice needs"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -226,14 +227,12 @@ export default function GeneralPractice() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-card-bg rounded-xl p-8 h-80 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-16 h-16 bg-secondary rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-2xl">📊</span>
-                  </div>
-                  <p className="text-primary/60">Practice Analytics</p>
-                  <p className="small-text text-primary/40">Track performance across practice areas</p>
-                </div>
+              <div className="w-full h-80 rounded-xl overflow-hidden shadow-xl">
+                <img
+                  src="https://cdn.prod.website-files.com/67e305e6047ac35569c07df9/68e1ecfbaf18c60931fe8939_legal2.png"
+                  alt="Practice Analytics - Track performance across practice areas"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -293,22 +292,12 @@ export default function GeneralPractice() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-spacing bg-secondary">
-        <div className="container-custom text-center">
-          <h2 className="text-primary mb-4">Ready to Streamline Your General Practice?</h2>
-          <p className="text-primary/90 mb-8 max-w-2xl mx-auto">
-            Handle all your practice areas efficiently with one comprehensive solution.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="btn-secondary bg-primary text-secondary hover:bg-primary/90">
-              Start Free Trial
-            </Link>
-            <Link href="/contact" className="btn-primary bg-primary/20 text-primary hover:bg-primary/30">
-              Schedule Demo
-            </Link>
-          </div>
-        </div>
-      </section>
+      <GlobalCTA 
+        title="Ready to Streamline Your General Practice?"
+        subtitle="Handle all your practice areas efficiently with one comprehensive solution."
+        buttonText="Start Free Trial"
+        buttonLink="/contact"
+      />
     </Layout>
   )
 }

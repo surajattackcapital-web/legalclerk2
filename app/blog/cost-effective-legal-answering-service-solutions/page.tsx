@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function CostEffectiveLegalAnsweringServiceSolutions() {
   return (
@@ -36,7 +37,29 @@ export default function CostEffectiveLegalAnsweringServiceSolutions() {
               Small law firms often struggle with the cost of professional answering services while needing to maintain a professional image and never miss potential clients. This guide explores cost-effective legal answering service solutions that provide maximum value without breaking the budget.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">The True Cost of Missing Calls</h2>
+            {/* Hero Image */}
+            <div className="mb-12">
+              <Image
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Cost-effective legal answering service solutions for small law firms"
+                width={1200}
+                height={600}
+                className="rounded-xl shadow-lg"
+                priority
+              />
+            </div>
+
+            <h2 className="text-3xl font-bold mb-8 mt-16">The True Cost of Missing Calls</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Financial impact of missed calls and lost revenue"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Before evaluating answering service costs, it's important to understand the true cost of missing calls. Studies show that law firms miss 30-40% of potential client calls, with each missed call potentially representing thousands of dollars in lost revenue.
@@ -75,7 +98,17 @@ export default function CostEffectiveLegalAnsweringServiceSolutions() {
               Hybrid solutions combine AI for initial screening with human operators for complex cases. This provides cost savings while maintaining quality service. Typical cost: $100-250/month.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Cost-Saving Strategies</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Cost-Saving Strategies</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Cost-saving strategies and budget optimization for legal services"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="card">
@@ -104,7 +137,17 @@ export default function CostEffectiveLegalAnsweringServiceSolutions() {
               </div>
             </div>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">ROI Calculation for Small Firms</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">ROI Calculation for Small Firms</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="ROI calculation and financial analysis for legal answering services"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               To determine if an answering service is cost-effective, calculate your return on investment:
@@ -123,7 +166,17 @@ export default function CostEffectiveLegalAnsweringServiceSolutions() {
               </ul>
             </div>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Features to Prioritize for Cost-Effectiveness</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Features to Prioritize for Cost-Effectiveness</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Essential features and priorities for cost-effective legal services"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
 
             <h3 className="text-2xl font-semibold mb-4">Essential Features</h3>
             <ul className="list-disc pl-6 mb-6 space-y-3">

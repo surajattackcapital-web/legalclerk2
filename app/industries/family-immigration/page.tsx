@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import GlobalCTA from '@/components/GlobalCTA'
 import Link from 'next/link'
 
 export default function FamilyImmigration() {
@@ -94,14 +95,12 @@ export default function FamilyImmigration() {
               </div>
             </div>
             <div>
-              <div className="bg-card-bg rounded-xl p-8 h-96 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-20 h-20 bg-secondary rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-3xl">👨‍👩‍👧‍👦</span>
-                  </div>
-                  <p className="text-primary/60">Family & Immigration Dashboard</p>
-                  <p className="small-text text-primary/40">Bilingual support system</p>
-                </div>
+              <div className="w-full max-w-md h-96 rounded-xl overflow-hidden shadow-xl">
+                <img
+                  src="https://cdn.prod.website-files.com/67e305e6047ac35569c07df9/689c73d07808650584716dc0_blin.webp"
+                  alt="Family & Immigration Dashboard - Bilingual Support System"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -139,23 +138,27 @@ export default function FamilyImmigration() {
       {/* Features Section */}
       <section className="section-spacing">
         <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="mb-4">Bilingual Support Features</h2>
-            <p className="text-primary/80 max-w-2xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="mb-4 text-3xl font-bold text-gray-800">BILINGUAL SUPPORT FEATURES</h2>
+            <p className="text-primary/80 max-w-2xl mx-auto text-lg">
               Specialized features designed for family and immigration law practices.
             </p>
           </div>
           
-          <div className="grid-responsive">
-            {features.map((feature, index) => (
-              <div key={index} className="card">
-                <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-xl">{feature.icon}</span>
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {features.map((feature, index) => (
+                <div key={index} className="group">
+                  <div className="card text-center h-full border border-gray-200 hover:border-primary/30 hover:shadow-xl transition-all duration-300 bg-white">
+                    <div className="w-16 h-16 bg-gradient-to-br from-secondary to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-2xl">{feature.icon}</span>
+                    </div>
+                    <h3 className="mb-4 text-xl font-bold text-gray-800 group-hover:text-primary transition-colors duration-300">{feature.title}</h3>
+                    <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                  </div>
                 </div>
-                <h3 className="mb-3">{feature.title}</h3>
-                <p className="text-primary/80 small-text">{feature.description}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -163,40 +166,61 @@ export default function FamilyImmigration() {
       {/* Cultural Sensitivity Section */}
       <section className="section-spacing bg-card-bg/20">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="mb-6">Cultural Sensitivity & Understanding</h2>
-                <p className="text-primary/80 mb-6">
-                  Our bilingual team understands the cultural nuances and sensitivities 
-                  involved in family and immigration law matters.
-                </p>
-                <ul className="space-y-3">
-                  <li className="flex items-start space-x-3">
-                    <span className="text-secondary mt-1">✓</span>
-                    <span className="text-primary/80 small-text">Understanding of family dynamics in different cultures</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <span className="text-secondary mt-1">✓</span>
-                    <span className="text-primary/80 small-text">Sensitivity to immigration-related fears and concerns</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <span className="text-secondary mt-1">✓</span>
-                    <span className="text-primary/80 small-text">Respect for religious and cultural practices</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <span className="text-secondary mt-1">✓</span>
-                    <span className="text-primary/80 small-text">Awareness of domestic violence cultural factors</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-card-bg rounded-xl p-8 h-80 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-16 h-16 bg-secondary rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-2xl">🤝</span>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="mb-4 text-3xl font-bold text-gray-800">CULTURAL SENSITIVITY & UNDERSTANDING</h2>
+              <p className="text-primary/80 max-w-3xl mx-auto text-lg leading-relaxed">
+                Our bilingual team understands the cultural nuances and sensitivities 
+                involved in family and immigration law matters.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="group">
+                <div className="card h-full border border-gray-200 hover:border-primary/30 hover:shadow-xl transition-all duration-300 bg-white">
+                  <div className="w-16 h-16 bg-gradient-to-br from-secondary to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-2xl">👨‍👩‍👧‍👦</span>
                   </div>
-                  <p className="text-primary/60">Cultural Training</p>
-                  <p className="small-text text-primary/40">Specialized cultural sensitivity training</p>
+                  <h3 className="mb-4 text-xl font-bold text-gray-800 group-hover:text-primary transition-colors duration-300">Family Dynamics</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Understanding of family dynamics in different cultures and how they impact legal proceedings and client relationships.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="group">
+                <div className="card h-full border border-gray-200 hover:border-primary/30 hover:shadow-xl transition-all duration-300 bg-white">
+                  <div className="w-16 h-16 bg-gradient-to-br from-secondary to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-2xl">🛂</span>
+                  </div>
+                  <h3 className="mb-4 text-xl font-bold text-gray-800 group-hover:text-primary transition-colors duration-300">Immigration Concerns</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Sensitivity to immigration-related fears and concerns, providing reassurance and clear communication throughout the process.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="group">
+                <div className="card h-full border border-gray-200 hover:border-primary/30 hover:shadow-xl transition-all duration-300 bg-white">
+                  <div className="w-16 h-16 bg-gradient-to-br from-secondary to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-2xl">🕌</span>
+                  </div>
+                  <h3 className="mb-4 text-xl font-bold text-gray-800 group-hover:text-primary transition-colors duration-300">Religious Practices</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Respect for religious and cultural practices, ensuring legal services accommodate diverse belief systems and traditions.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="group">
+                <div className="card h-full border border-gray-200 hover:border-primary/30 hover:shadow-xl transition-all duration-300 bg-white">
+                  <div className="w-16 h-16 bg-gradient-to-br from-secondary to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-2xl">🛡️</span>
+                  </div>
+                  <h3 className="mb-4 text-xl font-bold text-gray-800 group-hover:text-primary transition-colors duration-300">Domestic Violence Awareness</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Awareness of domestic violence cultural factors and how they may influence reporting, seeking help, and legal proceedings.
+                  </p>
                 </div>
               </div>
             </div>
@@ -220,14 +244,12 @@ export default function FamilyImmigration() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-card-bg rounded-xl p-8 h-80 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-16 h-16 bg-secondary rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-2xl">📊</span>
-                  </div>
-                  <p className="text-primary/60">Client Satisfaction</p>
-                  <p className="small-text text-primary/40">95% satisfaction rate</p>
-                </div>
+              <div className="w-full h-80 rounded-xl overflow-hidden shadow-xl">
+                <img
+                  src="https://cdn.prod.website-files.com/67e305e6047ac35569c07df9/68e1ee03a276b3c16c539e3a_legal3.png"
+                  alt="Client Satisfaction - 95% satisfaction rate"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -287,22 +309,12 @@ export default function FamilyImmigration() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-spacing bg-secondary">
-        <div className="container-custom text-center">
-          <h2 className="text-primary mb-4">Ready to Serve Your Community Better?</h2>
-          <p className="text-primary/90 mb-8 max-w-2xl mx-auto">
-            Expand your practice and serve diverse communities with professional bilingual support.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="btn-secondary bg-primary text-secondary hover:bg-primary/90">
-              Start Free Trial
-            </Link>
-            <Link href="/contact" className="btn-primary bg-primary/20 text-primary hover:bg-primary/30">
-              Schedule Demo
-            </Link>
-          </div>
-        </div>
-      </section>
+      <GlobalCTA 
+        title="Ready to Serve Your Community Better?"
+        subtitle="Expand your practice and serve diverse communities with professional bilingual support."
+        buttonText="Start Free Trial"
+        buttonLink="/contact"
+      />
     </Layout>
   )
 }

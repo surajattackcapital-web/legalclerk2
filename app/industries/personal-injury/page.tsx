@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import GlobalCTA from '@/components/GlobalCTA'
 import Link from 'next/link'
 
 export default function PersonalInjury() {
@@ -104,14 +105,12 @@ export default function PersonalInjury() {
               </div>
             </div>
             <div>
-              <div className="bg-card-bg rounded-xl p-8 h-96 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-20 h-20 bg-secondary rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-3xl">🚗</span>
-                  </div>
-                  <p className="text-primary/60">Personal Injury Dashboard</p>
-                  <p className="small-text text-primary/40">Emergency response system</p>
-                </div>
+              <div className="w-full max-w-md h-96 rounded-xl overflow-hidden shadow-xl">
+                <img
+                  src="https://cdn.prod.website-files.com/67e305e6047ac35569c07df9/68e1e8fa638caa9b7c1674df_legal.png"
+                  alt="Personal Injury Dashboard - Emergency response system"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -121,23 +120,27 @@ export default function PersonalInjury() {
       {/* Features Section */}
       <section className="section-spacing bg-card-bg/20">
         <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="mb-4">Specialized Personal Injury Features</h2>
-            <p className="text-primary/80 max-w-2xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="mb-4 text-3xl font-bold text-gray-800">PERSONAL INJURY FEATURES</h2>
+            <p className="text-primary/80 max-w-2xl mx-auto text-lg">
               Built specifically for personal injury law firms with features that matter most to accident cases.
             </p>
           </div>
           
-          <div className="grid-responsive">
-            {features.map((feature, index) => (
-              <div key={index} className="card">
-                <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-xl">{feature.icon}</span>
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {features.map((feature, index) => (
+                <div key={index} className="group">
+                  <div className="card text-center h-full border border-gray-200 hover:border-primary/30 hover:shadow-xl transition-all duration-300 bg-white">
+                    <div className="w-16 h-16 bg-gradient-to-br from-secondary to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-2xl">{feature.icon}</span>
+                    </div>
+                    <h3 className="mb-4 text-xl font-bold text-gray-800 group-hover:text-primary transition-colors duration-300">{feature.title}</h3>
+                    <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                  </div>
                 </div>
-                <h3 className="mb-3">{feature.title}</h3>
-                <p className="text-primary/80 small-text">{feature.description}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -182,14 +185,12 @@ export default function PersonalInjury() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-card-bg rounded-xl p-8 h-80 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-16 h-16 bg-secondary rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-2xl">📊</span>
-                  </div>
-                  <p className="text-primary/60">Case Analytics</p>
-                  <p className="small-text text-primary/40">Track intake and conversion rates</p>
-                </div>
+              <div className="w-full h-80 rounded-xl overflow-hidden shadow-xl">
+                <img
+                  src="https://cdn.prod.website-files.com/67e305e6047ac35569c07df9/68e1eb8f3988fb988b4ea002_legal1.png"
+                  alt="Case Analytics - Track intake and conversion rates"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -248,22 +249,12 @@ export default function PersonalInjury() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-spacing bg-secondary">
-        <div className="container-custom text-center">
-          <h2 className="text-primary mb-4">Ready to Never Miss Another Accident Case?</h2>
-          <p className="text-primary/90 mb-8 max-w-2xl mx-auto">
-            Join personal injury firms already using our specialized solution to capture more cases and serve clients better.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="btn-secondary bg-primary text-secondary hover:bg-primary/90">
-              Start Free Trial
-            </Link>
-            <Link href="/contact" className="btn-primary bg-primary/20 text-primary hover:bg-primary/30">
-              Schedule Demo
-            </Link>
-          </div>
-        </div>
-      </section>
+      <GlobalCTA 
+        title="Ready to Never Miss Another Accident Case?"
+        subtitle="Join personal injury firms already using our specialized solution to capture more cases and serve clients better."
+        buttonText="Start Free Trial"
+        buttonLink="/contact"
+      />
     </Layout>
   )
 }

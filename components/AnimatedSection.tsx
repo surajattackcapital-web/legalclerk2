@@ -4,17 +4,11 @@ import { useEffect, useRef, useState } from 'react'
 
 interface AnimatedSectionProps {
   children: React.ReactNode
-  animation?: 'fadeInUp' | 'fadeIn' | 'slideInLeft' | 'slideInRight' | 'scaleIn' | 'bounceIn'
-  delay?: number
   className?: string
+  delay?: number
 }
 
-export default function AnimatedSection({ 
-  children, 
-  animation = 'fadeInUp', 
-  delay = 0,
-  className = '' 
-}: AnimatedSectionProps) {
+export default function AnimatedSection({ children, className = '', delay = 0 }: AnimatedSectionProps) {
   const [isVisible, setIsVisible] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
 
@@ -27,7 +21,10 @@ export default function AnimatedSection({
           }, delay)
         }
       },
-      { threshold: 0.1 }
+      {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      }
     )
 
     if (ref.current) {
@@ -41,21 +38,10 @@ export default function AnimatedSection({
     }
   }, [delay])
 
-  const animationClasses = {
-    fadeInUp: 'animate-fade-in-up',
-    fadeIn: 'animate-fade-in',
-    slideInLeft: 'animate-slide-in-left',
-    slideInRight: 'animate-slide-in-right',
-    scaleIn: 'animate-scale-in',
-    bounceIn: 'animate-bounce-in'
-  }
-
   return (
     <div
       ref={ref}
-      className={`transition-all duration-700 ${
-        isVisible ? animationClasses[animation] : 'opacity-0 translate-y-8'
-      } ${className}`}
+      className={`scroll-reveal ${isVisible ? 'revealed' : ''} ${className}`}
     >
       {children}
     </div>

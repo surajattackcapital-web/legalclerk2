@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import GlobalCTA from '@/components/GlobalCTA'
 import Link from 'next/link'
 
 export default function AIReceptionist() {
@@ -32,6 +33,21 @@ export default function AIReceptionist() {
       title: 'Follow-up Automation',
       description: 'Automated follow-up reminders and appointment confirmations.',
       icon: '⏰'
+    },
+    {
+      title: 'Multi-language Support',
+      description: 'Communicate with clients in multiple languages including Spanish and English.',
+      icon: '🌍'
+    },
+    {
+      title: 'HIPAA Compliance',
+      description: 'Fully compliant with healthcare privacy regulations for sensitive client data.',
+      icon: '🔒'
+    },
+    {
+      title: 'Analytics & Reporting',
+      description: 'Comprehensive insights into call patterns, client interactions, and performance metrics.',
+      icon: '📊'
     }
   ]
 
@@ -52,7 +68,7 @@ export default function AIReceptionist() {
           <div className="hero-grid">
             <div className="space-y-6">
               <h1 className="text-balance">AI Receptionist for Law Firms</h1>
-              <p className="text-xl text-primary/80 leading-relaxed">
+              <p className="text-xl text-text-secondary leading-relaxed">
                 Advanced artificial intelligence that handles client calls, schedules appointments, 
                 and provides professional service 24/7. Never miss another opportunity.
               </p>
@@ -65,20 +81,18 @@ export default function AIReceptionist() {
                 </Link>
               </div>
               <div className="flex items-center space-x-6 pt-4">
-                <span className="text-primary/60 small-text">✓ HIPAA Compliant</span>
-                <span className="text-primary/60 small-text">✓ 24/7 Available</span>
-                <span className="text-primary/60 small-text">✓ Custom Training</span>
+                <span className="text-text-secondary/60 small-text">✓ HIPAA Compliant</span>
+                <span className="text-text-secondary/60 small-text">✓ 24/7 Available</span>
+                <span className="text-text-secondary/60 small-text">✓ Custom Training</span>
               </div>
             </div>
             <div>
-              <div className="bg-card-bg rounded-xl p-8 h-96 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-20 h-20 bg-secondary rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-3xl">🤖</span>
-                  </div>
-                  <p className="text-primary/60">AI Receptionist Dashboard</p>
-                  <p className="small-text text-primary/40">Live conversation interface</p>
-                </div>
+              <div className="w-full max-w-md h-96 rounded-xl overflow-hidden shadow-xl">
+                <img
+                  src="https://cdn.prod.website-files.com/67e305e6047ac35569c07df9/68e1ef5d0896c0c10cfd99d9_legal4.png"
+                  alt="AI Receptionist for Law Firms Dashboard"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -90,20 +104,20 @@ export default function AIReceptionist() {
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="mb-4">Powerful AI Features</h2>
-            <p className="text-primary/80 max-w-2xl mx-auto">
+            <p className="text-text-secondary max-w-2xl mx-auto">
               Our AI receptionist is trained specifically for legal practices and understands 
               the unique needs of law firms.
             </p>
           </div>
           
-          <div className="grid-responsive">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {features.map((feature, index) => (
-              <div key={index} className="card">
-                <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-xl">{feature.icon}</span>
+              <div key={index} className="card border border-border-light text-center">
+                <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                  <span className="text-2xl text-secondary">{feature.icon}</span>
                 </div>
-                <h3 className="mb-3">{feature.title}</h3>
-                <p className="text-primary/80 small-text">{feature.description}</p>
+                <h3 className="mb-4 text-xl font-bold text-gray-800">{feature.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -113,42 +127,65 @@ export default function AIReceptionist() {
       {/* How It Works */}
       <section className="section-spacing">
         <div className="container-custom">
-          <div className="text-center mb-12">
+          <div className="text-center mb-16">
             <h2 className="mb-4">How It Works</h2>
-            <p className="text-primary/80 max-w-2xl mx-auto">
-              Simple setup, powerful results. Get your AI receptionist up and running in minutes.
+            <p className="text-text-secondary max-w-2xl mx-auto">
+              Get your AI receptionist up and running in three simple steps
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-secondary rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary">1</span>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Step 1 */}
+              <div className="relative">
+                <div className="card text-center h-full border border-border-light hover:shadow-lg transition-all duration-300">
+                  <div className="w-20 h-20 bg-gradient-to-br from-primary to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                    <span className="text-3xl font-bold text-white">1</span>
+                  </div>
+                  <h3 className="mb-4 text-xl font-bold text-gray-800">Setup & Training</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    We configure your AI with your firm's information, practice areas, and specific requirements.
+                  </p>
+                </div>
+                {/* Arrow for desktop */}
+                <div className="hidden md:block absolute top-10 -right-4 w-8 h-8 bg-primary rounded-full flex items-center justify-center z-10">
+                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
               </div>
-              <h3 className="mb-3">Setup & Training</h3>
-              <p className="text-primary/80 small-text">
-                We configure your AI with your firm's information, practice areas, and specific requirements.
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-secondary rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary">2</span>
+
+              {/* Step 2 */}
+              <div className="relative">
+                <div className="card text-center h-full border border-border-light hover:shadow-lg transition-all duration-300">
+                  <div className="w-20 h-20 bg-gradient-to-br from-primary to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                    <span className="text-3xl font-bold text-white">2</span>
+                  </div>
+                  <h3 className="mb-4 text-xl font-bold text-gray-800">Go Live</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Your AI receptionist starts handling calls immediately, with your phone system integration.
+                  </p>
+                </div>
+                {/* Arrow for desktop */}
+                <div className="hidden md:block absolute top-10 -right-4 w-8 h-8 bg-primary rounded-full flex items-center justify-center z-10">
+                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
               </div>
-              <h3 className="mb-3">Go Live</h3>
-              <p className="text-primary/80 small-text">
-                Your AI receptionist starts handling calls immediately, with your phone system integration.
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-secondary rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary">3</span>
+
+              {/* Step 3 */}
+              <div>
+                <div className="card text-center h-full border border-border-light hover:shadow-lg transition-all duration-300">
+                  <div className="w-20 h-20 bg-gradient-to-br from-primary to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                    <span className="text-3xl font-bold text-white">3</span>
+                  </div>
+                  <h3 className="mb-4 text-xl font-bold text-gray-800">Monitor & Optimize</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Track performance, review conversations, and continuously improve your AI's responses.
+                  </p>
+                </div>
               </div>
-              <h3 className="mb-3">Monitor & Optimize</h3>
-              <p className="text-primary/80 small-text">
-                Track performance, review conversations, and continuously improve your AI's responses.
-              </p>
             </div>
           </div>
         </div>
@@ -164,20 +201,18 @@ export default function AIReceptionist() {
                 <ul className="space-y-4">
                   {benefits.map((benefit, index) => (
                     <li key={index} className="flex items-start space-x-3">
-                      <span className="text-secondary mt-1">✓</span>
-                      <span className="text-primary/80">{benefit}</span>
+                      <span className="text-primary mt-1">✓</span>
+                      <span className="text-text-secondary">{benefit}</span>
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className="bg-card-bg rounded-xl p-8 h-80 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-16 h-16 bg-secondary rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-2xl">📊</span>
-                  </div>
-                  <p className="text-primary/60">Performance Analytics</p>
-                  <p className="small-text text-primary/40">Real-time insights and reporting</p>
-                </div>
+              <div className="w-full h-80 rounded-xl overflow-hidden shadow-xl">
+                <img
+                  src="https://cdn.prod.website-files.com/67e305e6047ac35569c07df9/68e1ecfbaf18c60931fe8939_legal2.png"
+                  alt="Why Choose Our AI Receptionist - Performance Analytics Dashboard"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -189,38 +224,38 @@ export default function AIReceptionist() {
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="mb-4">Simple, Transparent Pricing</h2>
-            <p className="text-primary/80 max-w-2xl mx-auto">
+            <p className="text-text-secondary max-w-2xl mx-auto">
               Choose the plan that fits your firm's call volume and needs.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="card text-center">
+            <div className="card text-center border border-border-light">
               <h3 className="mb-2">Starter</h3>
-              <div className="text-3xl font-bold text-secondary mb-2">$299<span className="text-lg text-primary/60">/month</span></div>
-              <p className="text-primary/80 small-text mb-4">Up to 200 calls/month</p>
-              <Link href="/pricing" className="text-secondary hover:text-orange-600 transition-colors">
+              <div className="text-3xl font-bold text-text-primary mb-2">$299<span className="text-lg text-text-secondary">/month</span></div>
+              <p className="text-text-secondary small-text mb-4">Up to 200 calls/month</p>
+              <Link href="/pricing" className="text-primary hover:text-purple-700 transition-colors">
                 View Details →
               </Link>
             </div>
             
-            <div className="card text-center ring-2 ring-secondary">
-              <div className="bg-secondary text-primary px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">
+            <div className="card text-center ring-2 ring-primary border border-border-light">
+              <div className="bg-primary text-secondary px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">
                 Most Popular
               </div>
               <h3 className="mb-2">Professional</h3>
-              <div className="text-3xl font-bold text-secondary mb-2">$599<span className="text-lg text-primary/60">/month</span></div>
-              <p className="text-primary/80 small-text mb-4">Up to 500 calls/month</p>
-              <Link href="/pricing" className="text-secondary hover:text-orange-600 transition-colors">
+              <div className="text-3xl font-bold text-text-primary mb-2">$599<span className="text-lg text-text-secondary">/month</span></div>
+              <p className="text-text-secondary small-text mb-4">Up to 500 calls/month</p>
+              <Link href="/pricing" className="text-primary hover:text-purple-700 transition-colors">
                 View Details →
               </Link>
             </div>
             
-            <div className="card text-center">
+            <div className="card text-center border border-border-light">
               <h3 className="mb-2">Enterprise</h3>
-              <div className="text-3xl font-bold text-secondary mb-2">Custom</div>
-              <p className="text-primary/80 small-text mb-4">Unlimited calls</p>
-              <Link href="/contact" className="text-secondary hover:text-orange-600 transition-colors">
+              <div className="text-3xl font-bold text-text-primary mb-2">Custom</div>
+              <p className="text-text-secondary small-text mb-4">Unlimited calls</p>
+              <Link href="/contact" className="text-primary hover:text-purple-700 transition-colors">
                 Contact Sales →
               </Link>
             </div>
@@ -229,22 +264,12 @@ export default function AIReceptionist() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-spacing bg-secondary">
-        <div className="container-custom text-center">
-          <h2 className="text-primary mb-4">Ready to Get Your AI Receptionist?</h2>
-          <p className="text-primary/90 mb-8 max-w-2xl mx-auto">
-            Join hundreds of law firms already using our AI receptionist to never miss another client call.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="btn-secondary bg-primary text-secondary hover:bg-primary/90">
-              Start Free Trial
-            </Link>
-            <Link href="/contact" className="btn-primary bg-primary/20 text-primary hover:bg-primary/30">
-              Schedule Demo
-            </Link>
-          </div>
-        </div>
-      </section>
+      <GlobalCTA 
+        title="Ready to Get Your AI Receptionist?"
+        subtitle="Join hundreds of law firms already using our AI receptionist to never miss another client call."
+        buttonText="Start Free Trial"
+        buttonLink="/contact"
+      />
     </Layout>
   )
 }

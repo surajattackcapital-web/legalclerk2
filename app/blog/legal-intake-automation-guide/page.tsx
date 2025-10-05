@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function LegalIntakeAutomationGuide() {
   return (
@@ -36,7 +37,29 @@ export default function LegalIntakeAutomationGuide() {
               Legal intake automation is revolutionizing how law firms handle new client onboarding. By implementing automated systems, law firms can reduce manual work, improve accuracy, and provide a better client experience while capturing more qualified leads.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">What is Legal Intake Automation?</h2>
+            {/* Hero Image */}
+            <div className="mb-12">
+              <Image
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Legal intake automation and client onboarding systems"
+                width={1200}
+                height={600}
+                className="rounded-xl shadow-lg"
+                priority
+              />
+            </div>
+
+            <h2 className="text-3xl font-bold mb-8 mt-16">What is Legal Intake Automation?</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Legal intake automation technology and process overview"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Legal intake automation refers to the use of technology to streamline and automate the process of collecting, processing, and managing new client information. This includes automated forms, document collection, case evaluation, and initial client communication.
@@ -102,7 +125,17 @@ export default function LegalIntakeAutomationGuide() {
               </div>
             </div>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Implementation Strategies for Law Firms</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Implementation Strategies for Law Firms</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Implementation strategies and best practices for legal intake automation"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
 
             <h3 className="text-2xl font-semibold mb-4">1. Start with High-Volume Practice Areas</h3>
             <p className="mb-6">
@@ -124,7 +157,17 @@ export default function LegalIntakeAutomationGuide() {
               Provide comprehensive training to all staff members on how to use the new automation systems and how to handle automated leads effectively.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Best Practices for Legal Intake Automation</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Best Practices for Legal Intake Automation</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Best practices and optimization strategies for legal intake automation"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
 
             <ul className="list-disc pl-6 mb-8 space-y-3">
               <li><strong>Keep Forms Simple:</strong> Avoid overwhelming clients with too many questions. Focus on essential information that helps qualify the case.</li>
@@ -135,7 +178,17 @@ export default function LegalIntakeAutomationGuide() {
               <li><strong>Monitor and Optimize:</strong> Regularly review intake data and conversion rates to identify areas for improvement.</li>
             </ul>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Common Challenges and Solutions</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Common Challenges and Solutions</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Common challenges and solutions in legal intake automation"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
 
             <h3 className="text-2xl font-semibold mb-4">Challenge: Client Resistance to Technology</h3>
             <p className="mb-6">

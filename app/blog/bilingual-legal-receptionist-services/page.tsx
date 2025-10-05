@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function BilingualLegalReceptionistServices() {
   return (
@@ -36,7 +37,29 @@ export default function BilingualLegalReceptionistServices() {
               In today's diverse society, offering bilingual legal receptionist services is essential for law firms that want to serve a broader client base and capture leads that might otherwise be lost due to language barriers. Spanish-speaking clients represent a significant and growing market segment that many law firms are missing.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">The Growing Need for Bilingual Legal Services</h2>
+            {/* Hero Image */}
+            <div className="mb-12">
+              <Image
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Bilingual legal receptionist providing multilingual client service"
+                width={1200}
+                height={600}
+                className="rounded-xl shadow-lg"
+                priority
+              />
+            </div>
+
+            <h2 className="text-3xl font-bold mb-8 mt-16">The Growing Need for Bilingual Legal Services</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Diverse community and multicultural legal services"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               According to recent census data, over 41 million people in the United States speak Spanish at home, making it the second most spoken language in the country. Many of these individuals prefer to communicate in Spanish, especially when dealing with sensitive legal matters.
@@ -74,7 +97,17 @@ export default function BilingualLegalReceptionistServices() {
               Spanish-speaking clients who can communicate in their preferred language are more likely to retain legal services, leading to higher conversion rates and increased revenue.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Practice Areas That Benefit Most from Bilingual Services</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Practice Areas That Benefit Most from Bilingual Services</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Different legal practice areas benefiting from bilingual services"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="card">
@@ -125,7 +158,17 @@ export default function BilingualLegalReceptionistServices() {
               Legal emergencies don't follow business hours. Ensure your bilingual receptionist service offers round-the-clock availability for Spanish-speaking clients.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Implementation Best Practices</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Implementation Best Practices</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Implementation strategies for bilingual legal services"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
 
             <h3 className="text-2xl font-semibold mb-4">1. Market Research</h3>
             <p className="mb-6">
@@ -164,7 +207,17 @@ export default function BilingualLegalReceptionistServices() {
               <strong>Solution:</strong> Choose a service provider that employs native Spanish speakers who understand cultural nuances and communication styles common in Spanish-speaking communities.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">ROI of Bilingual Legal Receptionist Services</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">ROI of Bilingual Legal Receptionist Services</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="ROI calculation and financial benefits of bilingual legal services"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               The return on investment for bilingual services can be significant, especially in areas with large Spanish-speaking populations:

@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function LegalAnsweringServiceTrends2024() {
   return (
@@ -36,7 +37,29 @@ export default function LegalAnsweringServiceTrends2024() {
               The legal answering service industry is rapidly evolving with new technologies, changing client expectations, and emerging trends that are reshaping how law firms handle client intake. This comprehensive guide explores the key trends that will define legal answering services in 2024 and beyond.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">1. AI-Powered Answering Services</h2>
+            {/* Hero Image */}
+            <div className="mb-12">
+              <Image
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Legal answering service trends 2024 and future technology"
+                width={1200}
+                height={600}
+                className="rounded-xl shadow-lg"
+                priority
+              />
+            </div>
+
+            <h2 className="text-3xl font-bold mb-8 mt-16">1. AI-Powered Answering Services</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="AI-powered answering services and artificial intelligence in legal"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Artificial intelligence is revolutionizing legal answering services, providing 24/7 availability, instant response times, and consistent service quality. AI-powered systems can handle basic intake, qualify leads, and route complex cases to human operators.
@@ -79,7 +102,17 @@ export default function LegalAnsweringServiceTrends2024() {
               <li>Billing system integration for time tracking</li>
             </ul>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">3. Mobile-First Approach</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">3. Mobile-First Approach</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Mobile-first approach and smartphone optimization for legal services"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               With increasing mobile usage, legal answering services are adopting mobile-first approaches to ensure optimal performance on smartphones and tablets. This includes mobile-optimized interfaces and responsive design.
@@ -128,7 +161,17 @@ export default function LegalAnsweringServiceTrends2024() {
               <li>Custom reporting and dashboard creation</li>
             </ul>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">5. Enhanced Security and Compliance</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">5. Enhanced Security and Compliance</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Enhanced security and compliance measures for legal services"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               With increasing cybersecurity threats and regulatory requirements, legal answering services are implementing enhanced security measures and compliance protocols to protect sensitive client information.
@@ -162,7 +205,17 @@ export default function LegalAnsweringServiceTrends2024() {
               </ul>
             </div>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">7. Multilingual and Cultural Support</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">7. Multilingual and Cultural Support</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Multilingual and cultural support for diverse legal clients"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               As law firms serve increasingly diverse communities, legal answering services are expanding their multilingual capabilities and cultural sensitivity training to better serve clients from different backgrounds.
@@ -178,7 +231,17 @@ export default function LegalAnsweringServiceTrends2024() {
               <li>Regional accent and dialect recognition</li>
             </ul>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">8. Sustainability and Environmental Responsibility</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">8. Sustainability and Environmental Responsibility</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Sustainability and environmental responsibility in legal services"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Legal answering services are adopting sustainable practices and environmental responsibility initiatives to meet the growing demand for eco-friendly business solutions.

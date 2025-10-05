@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function LegalAnsweringServiceROICalculator() {
   return (
@@ -36,7 +37,29 @@ export default function LegalAnsweringServiceROICalculator() {
               Calculating the return on investment (ROI) for legal answering services is crucial for making informed decisions about your firm's client intake strategy. This comprehensive guide provides formulas, examples, and tools to help you accurately measure the ROI of your answering service investment.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Understanding ROI for Legal Answering Services</h2>
+            {/* Hero Image */}
+            <div className="mb-12">
+              <Image
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Legal answering service ROI calculator and financial analysis"
+                width={1200}
+                height={600}
+                className="rounded-xl shadow-lg"
+                priority
+              />
+            </div>
+
+            <h2 className="text-3xl font-bold mb-8 mt-16">Understanding ROI for Legal Answering Services</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="ROI calculation formulas and investment analysis"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               ROI measures the efficiency of an investment by comparing the gain from the investment to its cost. For legal answering services, ROI helps determine whether the service is generating enough additional revenue to justify its cost.
@@ -79,7 +102,17 @@ export default function LegalAnsweringServiceROICalculator() {
               <li><strong>Total Monthly Cost:</strong> All costs associated with the service</li>
             </ul>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">ROI Calculation Examples</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">ROI Calculation Examples</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="ROI calculation examples and case studies for law firms"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <h3 className="text-2xl font-semibold mb-4">Example 1: Personal Injury Law Firm</h3>
             <div className="bg-secondary/10 p-6 rounded-xl mb-8">
@@ -138,7 +171,17 @@ export default function LegalAnsweringServiceROICalculator() {
               </ul>
             </div>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Factors That Affect ROI</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Factors That Affect ROI</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Factors affecting ROI and performance metrics for legal services"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="card">
@@ -201,7 +244,17 @@ export default function LegalAnsweringServiceROICalculator() {
               <li>Implement value-based pricing strategies</li>
             </ul>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">ROI Tracking and Monitoring</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">ROI Tracking and Monitoring</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="ROI tracking and monitoring systems for legal services"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Regular monitoring and tracking of ROI metrics is essential for optimizing performance:

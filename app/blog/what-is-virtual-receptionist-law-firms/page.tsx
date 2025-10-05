@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function VirtualReceptionistBlog() {
   return (
@@ -40,7 +41,29 @@ export default function VirtualReceptionistBlog() {
               But wait, what exactly <em>is</em> a virtual receptionist? In this comprehensive guide, we'll walk you through what a virtual receptionist is, what they do, and how your law firm can benefit from these specialized services.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">What is a Virtual Receptionist?</h2>
+            {/* Hero Image */}
+            <div className="mb-12">
+              <Image
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Virtual receptionist services for law firms and remote legal support"
+                width={1200}
+                height={600}
+                className="rounded-xl shadow-lg"
+                priority
+              />
+            </div>
+
+            <h2 className="text-3xl font-bold mb-8 mt-16">What is a Virtual Receptionist?</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Virtual receptionist technology and remote work solutions"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Virtual receptionists perform almost all of the same tasks as an in-house receptionist, such as taking inbound and outbound calls and responding to client inquiries, but from a remote location. Although these professionals work for an outsourced agency, they will give the impression that they are a part of your in-house team.
@@ -93,7 +116,17 @@ export default function VirtualReceptionistBlog() {
               By hiring virtual receptionists, you can place client interaction responsibility with agents trained in sounding professional and boosting customer satisfaction. Virtual receptionists can also boost your firm's credibility and help you build a reputation as a professional, well-organized law practice.
             </p>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Specialized Legal Receptionist Services</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Specialized Legal Receptionist Services</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Specialized legal receptionist services and professional training"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Not all virtual receptionist services are created equal. For law firms, it's crucial to work with receptionists who understand legal terminology, client confidentiality requirements, and the unique needs of different practice areas. Specialized legal receptionist services offer:
@@ -132,7 +165,17 @@ export default function VirtualReceptionistBlog() {
               </div>
             </div>
 
-            <h2 className="text-3xl font-bold mb-6 mt-12">Conclusion</h2>
+            <h2 className="text-3xl font-bold mb-8 mt-16">Conclusion</h2>
+            
+            <div className="mb-8">
+              <Image
+                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Conclusion and next steps for virtual receptionist implementation"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="mb-6">
               Virtual receptionists can transform your law firm's client intake process, boost productivity, and capture more qualified leads. By outsourcing your call handling to specialized legal receptionists, you can focus on what you do best - practicing law - while ensuring that no potential client call goes unanswered.

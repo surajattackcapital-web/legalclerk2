@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import GlobalCTA from '@/components/GlobalCTA'
 import Link from 'next/link'
 
 export default function Bilingual() {
@@ -94,14 +95,12 @@ export default function Bilingual() {
               </div>
             </div>
             <div>
-              <div className="bg-card-bg rounded-xl p-8 h-96 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-20 h-20 bg-secondary rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-3xl">🌍</span>
-                  </div>
-                  <p className="text-primary/60">Bilingual Support</p>
-                  <p className="small-text text-primary/40">English & Spanish</p>
-                </div>
+              <div className="w-full max-w-md h-96 rounded-xl overflow-hidden shadow-xl">
+                <img
+                  src="https://cdn.prod.website-files.com/67e305e6047ac35569c07df9/689c73d07808650584716dc0_blin.webp"
+                  alt="Bilingual Support - English & Spanish Legal Services"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -135,27 +134,49 @@ export default function Bilingual() {
       {/* Benefits Section */}
       <section className="section-spacing">
         <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="mb-4">Why Bilingual Support Matters</h2>
-            <p className="text-primary/80 max-w-2xl mx-auto">
-              Serving Spanish-speaking clients effectively can significantly expand your practice and improve outcomes.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="card">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-xl">{benefit.icon}</span>
-                  </div>
-                  <div>
-                    <h3 className="mb-2">{benefit.title}</h3>
-                    <p className="text-primary/80 small-text">{benefit.description}</p>
-                  </div>
-                </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="mb-6">Why Bilingual Support Matters</h2>
+                <ul className="space-y-4">
+                  <li className="flex items-start space-x-3">
+                    <span className="text-secondary mt-1">✓</span>
+                    <div>
+                      <span className="text-primary font-semibold">Expanded Client Base</span>
+                      <p className="text-primary/80 small-text">Serve Spanish-speaking clients who may not have access to other legal services</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <span className="text-secondary mt-1">✓</span>
+                    <div>
+                      <span className="text-primary font-semibold">Better Communication</span>
+                      <p className="text-primary/80 small-text">Clear, accurate communication in the client's preferred language</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <span className="text-secondary mt-1">✓</span>
+                    <div>
+                      <span className="text-primary font-semibold">Cultural Understanding</span>
+                      <p className="text-primary/80 small-text">Sensitivity to cultural differences and communication styles</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <span className="text-secondary mt-1">✓</span>
+                    <div>
+                      <span className="text-primary font-semibold">Increased Trust</span>
+                      <p className="text-primary/80 small-text">Build stronger relationships with clients who feel understood and respected</p>
+                    </div>
+                  </li>
+                </ul>
               </div>
-            ))}
+              <div className="w-full h-80 rounded-xl overflow-hidden shadow-xl">
+                <img
+                  src="https://cdn.prod.website-files.com/67e305e6047ac35569c07df9/689c6ca9df73b5284706284c_lawfirm.webp"
+                  alt="Why Bilingual Support Matters - Law Firm Diversity"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -183,42 +204,65 @@ export default function Bilingual() {
       {/* How It Works */}
       <section className="section-spacing">
         <div className="container-custom">
-          <div className="text-center mb-12">
+          <div className="text-center mb-16">
             <h2 className="mb-4">How Bilingual Support Works</h2>
             <p className="text-primary/80 max-w-2xl mx-auto">
-              Seamless language support that adapts to your client's needs and preferences.
+              Seamless language support that adapts to your client's needs and preferences
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-secondary rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary">1</span>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Step 1 */}
+              <div className="relative">
+                <div className="card text-center h-full border border-border-light hover:shadow-lg transition-all duration-300">
+                  <div className="w-20 h-20 bg-gradient-to-br from-secondary to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                    <span className="text-3xl font-bold text-white">1</span>
+                  </div>
+                  <h3 className="mb-4 text-xl font-bold text-gray-800">Language Detection</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Our system automatically detects the client's preferred language and routes accordingly.
+                  </p>
+                </div>
+                {/* Arrow for desktop */}
+                <div className="hidden md:block absolute top-10 -right-4 w-8 h-8 bg-secondary rounded-full flex items-center justify-center z-10">
+                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
               </div>
-              <h3 className="mb-3">Language Detection</h3>
-              <p className="text-primary/80 small-text">
-                Our system automatically detects the client's preferred language and routes accordingly.
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-secondary rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary">2</span>
+
+              {/* Step 2 */}
+              <div className="relative">
+                <div className="card text-center h-full border border-border-light hover:shadow-lg transition-all duration-300">
+                  <div className="w-20 h-20 bg-gradient-to-br from-secondary to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                    <span className="text-3xl font-bold text-white">2</span>
+                  </div>
+                  <h3 className="mb-4 text-xl font-bold text-gray-800">Expert Handling</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Native speakers with legal expertise handle the call with cultural sensitivity.
+                  </p>
+                </div>
+                {/* Arrow for desktop */}
+                <div className="hidden md:block absolute top-10 -right-4 w-8 h-8 bg-secondary rounded-full flex items-center justify-center z-10">
+                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
               </div>
-              <h3 className="mb-3">Expert Handling</h3>
-              <p className="text-primary/80 small-text">
-                Native speakers with legal expertise handle the call with cultural sensitivity.
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-secondary rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary">3</span>
+
+              {/* Step 3 */}
+              <div>
+                <div className="card text-center h-full border border-border-light hover:shadow-lg transition-all duration-300">
+                  <div className="w-20 h-20 bg-gradient-to-br from-secondary to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                    <span className="text-3xl font-bold text-white">3</span>
+                  </div>
+                  <h3 className="mb-4 text-xl font-bold text-gray-800">Seamless Integration</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    All information is captured and integrated into your existing case management system.
+                  </p>
+                </div>
               </div>
-              <h3 className="mb-3">Seamless Integration</h3>
-              <p className="text-primary/80 small-text">
-                All information is captured and integrated into your existing case management system.
-              </p>
             </div>
           </div>
         </div>
@@ -247,22 +291,12 @@ export default function Bilingual() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-spacing bg-secondary">
-        <div className="container-custom text-center">
-          <h2 className="text-primary mb-4">Ready to Serve Spanish-Speaking Clients?</h2>
-          <p className="text-primary/90 mb-8 max-w-2xl mx-auto">
-            Expand your practice and serve your community better with professional bilingual support.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="btn-secondary bg-primary text-secondary hover:bg-primary/90">
-              Start Free Trial
-            </Link>
-            <Link href="/contact" className="btn-primary bg-primary/20 text-primary hover:bg-primary/30">
-              Schedule Demo
-            </Link>
-          </div>
-        </div>
-      </section>
+      <GlobalCTA 
+        title="Ready to Serve Spanish-Speaking Clients?"
+        subtitle="Expand your practice and serve your community better with professional bilingual support."
+        buttonText="Start Free Trial"
+        buttonLink="/contact"
+      />
     </Layout>
   )
 }
