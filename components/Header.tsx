@@ -145,7 +145,7 @@ export default function Header() {
   return (
     <header ref={headerRef} className="sticky top-0 z-50 bg-secondary/95 backdrop-blur-md border-b border-border-light transition-all duration-300">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
-        <div className="flex items-center justify-between h-18">
+        <div className="flex items-center justify-between" style={{ height: '75px' }}>
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group focus:outline-none">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-200">

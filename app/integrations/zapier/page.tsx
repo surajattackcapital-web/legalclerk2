@@ -106,10 +106,12 @@ export default function Zapier() {
             <div>
               <div className="bg-card-bg rounded-xl p-8 h-96 flex items-center justify-center">
                 <div className="text-center space-y-4">
-                  <div className="w-20 h-20 bg-secondary rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-3xl">🔗</span>
+                  <div className="w-20 h-20 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full mx-auto flex items-center justify-center shadow-lg">
+                    <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16c-.169 0-.333.034-.483.096l-2.785 1.61c-.15-.096-.32-.16-.5-.16-.552 0-1 .448-1 1s.448 1 1 1c.18 0 .35-.064.5-.16l2.785 1.61c.15.062.314.096.483.096.552 0 1-.448 1-1s-.448-1-1-1zm-11.136 0c-.552 0-1 .448-1 1s.448 1 1 1c.18 0 .35-.064.5-.16l2.785-1.61c.15-.062.314-.096.483-.096.552 0 1 .448 1 1s-.448 1-1 1c-.169 0-.333-.034-.483-.096L8.5 9.16c-.15.096-.32.16-.5.16-.552 0-1-.448-1-1s.448-1 1-1c.18 0 .35.064.5.16l2.785 1.61c.15.062.314.096.483.096z"/>
+                    </svg>
                   </div>
-                  <p className="text-primary/60">Zapier Dashboard</p>
+                  <p className="text-primary/60 font-semibold">Zapier Dashboard</p>
                   <p className="small-text text-primary/40">Workflow automation</p>
                 </div>
               </div>

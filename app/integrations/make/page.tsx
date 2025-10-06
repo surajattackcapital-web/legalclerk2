@@ -87,10 +87,12 @@ export default function Make() {
             <div>
               <div className="bg-card-bg rounded-xl p-8 h-96 flex items-center justify-center">
                 <div className="text-center space-y-4">
-                  <div className="w-20 h-20 bg-secondary rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-3xl">⚙️</span>
+                  <div className="w-20 h-20 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full mx-auto flex items-center justify-center shadow-lg">
+                    <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm-1 3v6h2V5h-2zm0 8v2h2v-2h-2z"/>
+                    </svg>
                   </div>
-                  <p className="text-primary/60">Make Dashboard</p>
+                  <p className="text-primary/60 font-semibold">Make Dashboard</p>
                   <p className="small-text text-primary/40">Visual workflow automation</p>
                 </div>
               </div>

@@ -106,10 +106,12 @@ export default function Airtable() {
             <div>
               <div className="bg-card-bg rounded-xl p-8 h-96 flex items-center justify-center">
                 <div className="text-center space-y-4">
-                  <div className="w-20 h-20 bg-secondary rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-3xl">📊</span>
+                  <div className="w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full mx-auto flex items-center justify-center shadow-lg">
+                    <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm0 2c3.314 0 6 2.686 6 6s-2.686 6-6 6-6-2.686-6-6 2.686-6 6-6zm0 2c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4z"/>
+                    </svg>
                   </div>
-                  <p className="text-primary/60">Airtable Dashboard</p>
+                  <p className="text-primary/60 font-semibold">Airtable Dashboard</p>
                   <p className="small-text text-primary/40">HIPAA-compliant database</p>
                 </div>
               </div>
