@@ -71,7 +71,7 @@ export default function FamilyImmigration() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="section-spacing">
+      <section className="section-spacing bg-gradient-to-br from-indigo-100 to-purple-100">
         <div className="container-custom">
           <div className="hero-grid">
             <div className="space-y-6">

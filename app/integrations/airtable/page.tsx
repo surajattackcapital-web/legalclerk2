@@ -80,7 +80,7 @@ export default function Airtable() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="section-spacing">
+      <section className="section-spacing bg-gradient-to-br from-purple-100 to-indigo-100">
         <div className="container-custom">
           <div className="hero-grid">
             <div className="space-y-6">
@@ -104,15 +104,17 @@ export default function Airtable() {
               </div>
             </div>
             <div>
-              <div className="bg-card-bg rounded-xl p-8 h-96 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full mx-auto flex items-center justify-center shadow-lg">
-                    <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm0 2c3.314 0 6 2.686 6 6s-2.686 6-6 6-6-2.686-6-6 2.686-6 6-6zm0 2c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4z"/>
-                    </svg>
+              <div className="bg-card-bg rounded-xl p-8 h-96 flex items-center justify-center overflow-hidden">
+                <div className="w-full h-full bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg flex items-center justify-center">
+                  <div className="text-center space-y-4">
+                    <div className="w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full mx-auto flex items-center justify-center shadow-lg">
+                      <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm0 2c3.314 0 6 2.686 6 6s-2.686 6-6 6-6-2.686-6-6 2.686-6 6-6zm0 2c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4z"/>
+                      </svg>
+                    </div>
+                    <p className="text-blue-600 font-semibold">Airtable Dashboard</p>
+                    <p className="text-blue-500 text-sm">HIPAA-compliant database</p>
                   </div>
-                  <p className="text-primary/60 font-semibold">Airtable Dashboard</p>
-                  <p className="small-text text-primary/40">HIPAA-compliant database</p>
                 </div>
               </div>
             </div>
@@ -130,7 +132,7 @@ export default function Airtable() {
             </p>
           </div>
           
-          <div className="grid-responsive">
+          <div className="grid-3x3">
             {features.map((feature, index) => (
               <div key={index} className="card">
                 <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
@@ -198,13 +200,15 @@ export default function Airtable() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-card-bg rounded-xl p-8 h-80 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-16 h-16 bg-secondary rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-2xl">🛡️</span>
+              <div className="bg-card-bg rounded-xl p-8 h-80 flex items-center justify-center overflow-hidden">
+                <div className="w-full h-full bg-gradient-to-br from-green-50 to-green-100 rounded-lg flex items-center justify-center">
+                  <div className="text-center space-y-4">
+                    <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-full mx-auto flex items-center justify-center shadow-lg">
+                      <span className="text-2xl text-white">🛡️</span>
+                    </div>
+                    <p className="text-green-600 font-semibold">Security Dashboard</p>
+                    <p className="text-green-500 text-sm">HIPAA compliance monitoring</p>
                   </div>
-                  <p className="text-primary/60">Security Dashboard</p>
-                  <p className="small-text text-primary/40">HIPAA compliance monitoring</p>
                 </div>
               </div>
             </div>
@@ -228,13 +232,15 @@ export default function Airtable() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-card-bg rounded-xl p-8 h-80 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-16 h-16 bg-secondary rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-2xl">📈</span>
+              <div className="bg-card-bg rounded-xl p-8 h-80 flex items-center justify-center overflow-hidden">
+                <div className="w-full h-full bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg flex items-center justify-center">
+                  <div className="text-center space-y-4">
+                    <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full mx-auto flex items-center justify-center shadow-lg">
+                      <span className="text-2xl text-white">📈</span>
+                    </div>
+                    <p className="text-purple-600 font-semibold">Performance Metrics</p>
+                    <p className="text-purple-500 text-sm">Track integration performance</p>
                   </div>
-                  <p className="text-primary/60">Performance Metrics</p>
-                  <p className="small-text text-primary/40">Track integration performance</p>
                 </div>
               </div>
             </div>

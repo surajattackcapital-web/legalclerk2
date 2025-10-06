@@ -72,7 +72,7 @@ export default function LegalIntake() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="section-spacing bg-gray-50">
+      <section className="section-spacing bg-gradient-to-br from-purple-100 to-pink-100">
         <div className="container-custom">
           <div className="hero-grid">
             <div className="space-y-6">
@@ -133,7 +133,7 @@ export default function LegalIntake() {
       </section>
 
       {/* Process Flow */}
-      <section className="section-spacing">
+      <section className="section-spacing bg-white">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="mb-4">Streamlined Intake Process</h2>
@@ -219,7 +219,7 @@ export default function LegalIntake() {
       </section>
 
       {/* Integration Section */}
-      <section className="section-spacing">
+      <section className="section-spacing bg-gradient-to-br from-gray-50 to-indigo-50">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="mb-4">Seamless Integrations</h2>

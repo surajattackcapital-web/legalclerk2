@@ -80,7 +80,7 @@ export default function Zapier() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="section-spacing">
+      <section className="section-spacing bg-gradient-to-br from-indigo-100 to-purple-100">
         <div className="container-custom">
           <div className="hero-grid">
             <div className="space-y-6">
@@ -104,15 +104,17 @@ export default function Zapier() {
               </div>
             </div>
             <div>
-              <div className="bg-card-bg rounded-xl p-8 h-96 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-20 h-20 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full mx-auto flex items-center justify-center shadow-lg">
-                    <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16c-.169 0-.333.034-.483.096l-2.785 1.61c-.15-.096-.32-.16-.5-.16-.552 0-1 .448-1 1s.448 1 1 1c.18 0 .35-.064.5-.16l2.785 1.61c.15.062.314.096.483.096.552 0 1-.448 1-1s-.448-1-1-1zm-11.136 0c-.552 0-1 .448-1 1s.448 1 1 1c.18 0 .35-.064.5-.16l2.785-1.61c.15-.062.314-.096.483-.096.552 0 1 .448 1 1s-.448 1-1 1c-.169 0-.333-.034-.483-.096L8.5 9.16c-.15.096-.32.16-.5.16-.552 0-1-.448-1-1s.448-1 1-1c.18 0 .35.064.5.16l2.785 1.61c.15.062.314.096.483.096z"/>
-                    </svg>
+              <div className="bg-card-bg rounded-xl p-8 h-96 flex items-center justify-center overflow-hidden">
+                <div className="w-full h-full bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg flex items-center justify-center">
+                  <div className="text-center space-y-4">
+                    <div className="w-20 h-20 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full mx-auto flex items-center justify-center shadow-lg">
+                      <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16c-.169 0-.333.034-.483.096l-2.785 1.61c-.15-.096-.32-.16-.5-.16-.552 0-1 .448-1 1s.448 1 1 1c.18 0 .35-.064.5-.16l2.785 1.61c.15.062.314.096.483.096.552 0 1-.448 1-1s-.448-1-1-1zm-11.136 0c-.552 0-1 .448-1 1s.448 1 1 1c.18 0 .35-.064.5-.16l2.785-1.61c.15-.062.314-.096.483-.096.552 0 1 .448 1 1s-.448 1-1 1c-.169 0-.333-.034-.483-.096L8.5 9.16c-.15.096-.32.16-.5.16-.552 0-1-.448-1-1s.448-1 1-1c.18 0 .35.064.5.16l2.785 1.61c.15.062.314.096.483.096z"/>
+                      </svg>
+                    </div>
+                    <p className="text-orange-600 font-semibold">Zapier Dashboard</p>
+                    <p className="text-orange-500 text-sm">Workflow automation</p>
                   </div>
-                  <p className="text-primary/60 font-semibold">Zapier Dashboard</p>
-                  <p className="small-text text-primary/40">Workflow automation</p>
                 </div>
               </div>
             </div>
@@ -130,7 +132,7 @@ export default function Zapier() {
             </p>
           </div>
           
-          <div className="grid-responsive">
+          <div className="grid-3x3">
             {features.map((feature, index) => (
               <div key={index} className="card">
                 <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
@@ -228,13 +230,15 @@ export default function Zapier() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-card-bg rounded-xl p-8 h-80 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-16 h-16 bg-secondary rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-2xl">⏱️</span>
+              <div className="bg-card-bg rounded-xl p-8 h-80 flex items-center justify-center overflow-hidden">
+                <div className="w-full h-full bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg flex items-center justify-center">
+                  <div className="text-center space-y-4">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full mx-auto flex items-center justify-center shadow-lg">
+                      <span className="text-2xl text-white">⏱️</span>
+                    </div>
+                    <p className="text-blue-600 font-semibold">Time Savings</p>
+                    <p className="text-blue-500 text-sm">Save 10+ hours per week</p>
                   </div>
-                  <p className="text-primary/60">Time Savings</p>
-                  <p className="small-text text-primary/40">Save 10+ hours per week</p>
                 </div>
               </div>
             </div>

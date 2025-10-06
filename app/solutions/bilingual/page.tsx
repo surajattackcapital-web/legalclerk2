@@ -71,7 +71,7 @@ export default function Bilingual() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="section-spacing">
+      <section className="section-spacing bg-gradient-to-br from-violet-100 to-purple-100">
         <div className="container-custom">
           <div className="hero-grid">
             <div className="space-y-6">
@@ -117,7 +117,7 @@ export default function Bilingual() {
             </p>
           </div>
           
-          <div className="grid-responsive">
+          <div className="grid-3x3">
             {features.map((feature, index) => (
               <div key={index} className="card">
                 <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
@@ -132,7 +132,7 @@ export default function Bilingual() {
       </section>
 
       {/* Benefits Section */}
-      <section className="section-spacing">
+      <section className="section-spacing bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -202,7 +202,7 @@ export default function Bilingual() {
       </section>
 
       {/* How It Works */}
-      <section className="section-spacing">
+      <section className="section-spacing bg-gradient-to-br from-gray-50 to-green-50">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="mb-4">How Bilingual Support Works</h2>

@@ -63,7 +63,7 @@ export default function AIReceptionist() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="section-spacing">
+      <section className="section-spacing bg-gradient-to-br from-purple-100 to-violet-100">
         <div className="container-custom">
           <div className="hero-grid">
             <div className="space-y-6">
@@ -125,7 +125,7 @@ export default function AIReceptionist() {
       </section>
 
       {/* How It Works */}
-      <section className="section-spacing">
+      <section className="section-spacing bg-white">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="mb-4">How It Works</h2>
@@ -220,7 +220,7 @@ export default function AIReceptionist() {
       </section>
 
       {/* Pricing Preview */}
-      <section className="section-spacing">
+      <section className="section-spacing bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="mb-4">Simple, Transparent Pricing</h2>

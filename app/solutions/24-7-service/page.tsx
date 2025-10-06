@@ -77,7 +77,7 @@ export default function Service247() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="section-spacing">
+      <section className="section-spacing bg-gradient-to-br from-purple-100 to-indigo-100">
         <div className="container-custom">
           <div className="hero-grid">
             <div className="space-y-6">
@@ -138,7 +138,7 @@ export default function Service247() {
       </section>
 
       {/* Features Section */}
-      <section className="section-spacing">
+      <section className="section-spacing bg-white">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="mb-4">Professional Service Features</h2>
@@ -229,7 +229,7 @@ export default function Service247() {
       </section>
 
       {/* Benefits Section */}
-      <section className="section-spacing">
+      <section className="section-spacing bg-gradient-to-br from-gray-50 to-orange-50">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

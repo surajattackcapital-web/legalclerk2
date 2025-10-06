@@ -94,8 +94,8 @@ export default function FAQs() {
                         </svg>
                       </div>
                     </div>
-                    <div className="w-full h-px bg-primary mb-4"></div>
-                    <p className="text-gray-600 leading-relaxed text-sm">
+                    <div className="w-full h-px bg-primary mb-6"></div>
+                    <p className="text-gray-600 leading-relaxed text-sm pt-2">
                       {faq.answer}
                     </p>
                   </div>

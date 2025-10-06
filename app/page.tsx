@@ -467,7 +467,7 @@ export default function Home() {
                   animate={{ height: openFAQ === index ? 'auto' : 0 }}
                   transition={{ duration: 0.3, ease: 'easeInOut' }}
                 >
-                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+                  <div className="px-6 pt-4 pb-5 text-gray-600 leading-relaxed">
                     {faq.answer}
                   </div>
                 </motion.div>
